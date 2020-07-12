@@ -1,0 +1,50 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+ 
+ <table width="100%" cellspacing="1">
+  <FORM ACTION="search.php" METHOD=POST>
+  <!--
+  
+  <INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$idLexique}>">
+  -->
+
+    <tr>
+      <td  class='even' style="TEXT-ALIGN: right;  width=<{$colWidth1}>"><b><{$libelle.lexique}><{$sep1}></b></td>
+      <td  class='odd'  style="text-align: left;    width=<{$colWidth3}>"><b><{$lexiqueList}></b</td>
+    </tr>
+    <tr>
+      <td  class='even' style="TEXT-ALIGN: right;  width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_LOOKBY}><{$sep1}></b></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><INPUT TYPE="text" CLASS="textbox" NAME="terme" VALUE="<{$search}>" SIZE=50></td>
+    </tr>
+   <tr>
+     <td  class='even' style="text-align: right;   width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_SEARCH_WHERE}><{$sep1}></b></td>
+     <td  class='odd'  style="text-align: left;    width=<{$colWidth3}>"><b><{$list_searchby}></b</td>
+   </tr>   
+   <!--
+   <tr>
+      <td  class='even' style="text-align: right;  width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_LOOKFOR}><{$sep1}></b></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><{$selected}></b></td>
+   </tr>
+   
+   --> 
+   <tr>
+      <td  class='even' style="text-align: right;  width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_SEARCH_IN}></b><{$sep1}></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><{$list_category}></b></td>
+   </tr>    
+   <!--   
+   <tr>
+      <td  class='even' style="text-align: right;  width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_SEARCH_IN}></b><{$sep1}></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><{$category}></b></td>
+   </tr>    
+   -->   
+   <tr>
+      <td  class='even' style="text-align: right;  width=<{$colWidth1}>"><b><{$smarty.const._MD_LEX_LOOKFOR}></b><{$sep1}></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><{$lookfor}></b></td>
+   </tr>    
+   <tr>
+      <td  class='even' style="text-align: right;  width=<{$colWidth1}>"><INPUT TYPE="button" VALUE="<{$smarty.const._CANCEL}>" onclick=<{$linkCancel}> ></td>
+      <td  class='odd'  style="text-align: left;   width=<{$colWidth3}>"><b><INPUT TYPE="submit" VALUE="<{$smarty.const._MD_LEX_SEARCH}>"></b></td>
+   </tr>    
+
+   </form>
+ </table>

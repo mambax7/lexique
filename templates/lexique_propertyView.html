@@ -1,0 +1,23 @@
+<!-- 
+<tr>
+  <td class='even' align='right'><{$postp.name}></td>
+  <td class='odd' align='left'><{$postp.value}></td>
+</tr>
+
+-->
+
+<{if $ppt.rowBefore == 1}>
+      </table>
+      <table  border="1" width="100%" cellspacing="0" cellpadding="0">   
+<{/if}>
+
+<tr>
+    <td width="250px"  class="itemBody" style="text-align:right"  >
+          <{$ppt.name}> 
+    </td>
+    
+    <td class="itemBody" style="text-align:left">
+        &nbsp;<{$ppt.value}>
+    </td>
+</tr>  
+

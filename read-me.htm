@@ -1,0 +1,251 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Module de gestion multi lexiques</title>
+</head>
+
+<body>
+
+<p class="MsoNormal" align="center"><b><font size="5">Module de gestion multi
+lexiques</font></b></p>
+<hr>
+<p class="MsoNormal"><b>Caractéristiques</b>:<o:p>
+</o:p>
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Possibilité de créer autant de lexique que l'on veut.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Chaque lexique est paramétrable indépendamment avec
+    son teste d'intro, son icône, sa présentation, son sélecteur, ses propriétés,
+    ...<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Une zone permet de définir une définition courte<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Trois zones de définitions qui intègre l'utilisation
+    des éditeurs koivi, Tinyediteor, Inbetween et bien sur zone de texte
+    normale.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Système de cache interne pour gérer les liens de la
+    rubrique &quot;voir aussi&quot; et la liste des catégories affectées à
+    chaque expression. Permet d'optimiser l'affichage.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Ajout de commentaire par les visiteurs (gérer par
+    xoops)<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Validation des nouvelles entrée. Chaque termes peut
+    avoir le statut &quot;validé&quot;, &quot;en attente&quot;, ou &quot;bloqué&quot;.
+    La liste des ternes en attente ou bloquée est gérer dans l'interface
+    d'administration.<o:p>
+    </o:p>
+  </li>
+</ul>
+<hr>
+<p class="MsoNormal"><b>Rubrique &quot;voir aussi&quot;</b><o:p>
+</o:p>
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Deux mode de gestion de la rubrique &quot;voir
+    aussi&quot;: par identifiant ou par mot. dans un cas les homonymes ne sont
+    pas inclus, mais il faut explicitement indiqué le terme lié, dans l'autre
+    cas tous les homonyme son inclut, au risque de pointer sur des terme qui
+    n'ont rein à voir (Attention c’est un choix a fair à la création du
+    lexique)<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Notion de &quot;Référentiel&quot; quand un mot est déclarer
+    comme tel, tous les termes qui pointe sur ce dernier incluront automatique
+    tous les termes de le rubrique &quot;voir aussi&quot; de ce dernier. Par
+    exemple supposons le mot couleur qui aurait dans sa rubrique &quot;voir
+    aussi&quot; les mots &quot;ektachrome, penta chrome, hexa chrome&quot; et défini
+    comme référentiel. Tous les termes qui aurait dans leur rubrique
+    &quot;voir aussi&quot; le mot couleur auront aussi automatiquement aussi les
+    mots &quot;ektachrome, penta chrome, hexa chrome&quot; de plus lé définition
+    courte sera affichée, ce qui permet de limiter la navigation d'une
+    expression à l'autre.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Mise en valeur des termes déclarés comme référentiel
+    paramétrable<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Mise en valeur des terme de la rubrique paramétrable<o:p>
+    </o:p>
+  </li>
+</ul>
+<p class="MsoNormal">&nbsp;</p>
+<hr>
+<p class="MsoNormal"><b>Catégories<o:p>
+</o:p>
+</b></p>
+<ul>
+  <li>
+    <p class="MsoNormal">Possibilités autant de jeu de catégories que l'on
+    souhaite<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Chaque lexique peut être rattaché à son propre jeu
+    de catégories<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">La sélection des catégories est multiple<o:p>
+    </o:p>
+  </li>
+</ul>
+<hr>
+<p class="MsoNormal"><b>Propriétés</b>: C'est un ensemble de champs que l'on
+peu ajouter pour des cas spécifique. Par exemple si on veut gérer une liste de
+Club, il est possible d'ajouter les champ &quot;Adresse&quot;, &quot;Téléphone&quot;,
+&quot;Email&quot;, &quot;Contact&quot;, ... <o:p>
+</o:p>
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Possibilité de créer autant de jeux de propriétés
+    que l'on souhaite.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Chaque lexique est rattaché à un jeu de propriété.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">recherche<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Le même jeu de propriétés peut être utilisé par
+    plusieurs lexiques<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Elles peuvent être typées en texte, email ou Url, le
+    module génère automatique les liens pour Email et Url.<o:p>
+    </o:p>
+  </li>
+</ul>
+<hr>
+<p class="MsoNormal"><b>Sélecteur</b>: C’est la barre de caractères en haut
+et en bas de page, normalement constitué des lettres de l'alphabet pour des
+recherche rapide.<o:p>
+</o:p>
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Possibilité de définir autant de sélecteurs que l'on
+    souhaite.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Chaque lexique est rattaché à un sélecteur<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Le même sélecteur peut être utilisé par plusieurs
+    lexiques<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Le jeu de caractère peut être défini ou automatique:
+    Par exemple pour un dictionnaire japonais qui n'utilise pas certain caractères
+    il est possible de n'indiquer que les lettres utiles, ou d'ajouter des
+    caractères comme les n accentué en espagnole. en automatique, le module génère
+    un sélecteur avec la première lettre des mots trouvés dans le lexique.
+    Possibilité d'avoir un caractère générique pour les caractères non listé
+    dans le sélecteurs.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Possibilité d'afficher le sélecteur sur plusieurs
+    lignes soit en ajoutant un caractère de retour à la ligne soit de manière
+    automatique: par exemple ABCDEGGHIJLMNOPQRSTUVWXY_0123456789 affichera les
+    lettre sur la première ligne et les chiffres sur la deuxième ligne.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Caractères d'encadrement et séparateurs paramétrables.<o:p>
+    </o:p>
+  </li>
+</ul>
+<hr>
+<p class="MsoNormal"><b>Titres</b>: Les titres des rubrique qui s'affiche à
+l'utilisateur peuvent être adaptés pour chaque lexique. pr exemple pour une
+gestion de livres, on remplacer le titre &quot;définition&quot; par &quot;résumé&quot;.<o:p>
+</o:p>
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Possibilité de définir autant de jeux de titres que
+    l'on souhaite.<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Chaque lexique est rattaché à un jeu de titre<o:p>
+    </o:p>
+  </li>
+  <li>
+    <p class="MsoNormal">Le même jeu de titres peut être utilisé par
+    plusieurs lexiques<o:p>
+    </o:p>
+  </li>
+</ul>
+<hr>
+<p class="MsoNormal"><b>Permissions</b>: L'affichage peut être adapté selon le
+groupe auquel appartient l'utilisateur. I peut être aussi configuré différemment
+dans les listes ou dans les fiches. L'affichage en liste peut présenté une
+liste simplifiée, et l'affichage en fiche présenter l'ensemble des
+informations par exemple.
+</p>
+<p class="MsoNormal">Tous les objets peuvent être sujet à permission:
+</p>
+<ul>
+  <li>
+    <p class="MsoNormal">Définition courte</li>
+  <li>
+    <p class="MsoNormal">Définition 1</li>
+  <li>
+    <p class="MsoNormal">Définition 2</li>
+  <li>
+    <p class="MsoNormal">définition 3</li>
+  <li>
+    <p class="MsoNormal">Voir aussi</li>
+  <li>
+    <p class="MsoNormal">Catégories</li>
+  <li>
+    <p class="MsoNormal">Chaque propriété individuellement</li>
+  <li>
+    <p class="MsoNormal">Action (ajout, suppression, impression, ect.)</li>
+</ul>
+<p class="MsoNormal"><o:p>
+</o:p>
+</p>
+<p class="MsoNormal">&nbsp;
+</p>
+<p class="MsoNormal"><o:p>
+</o:p>
+</p>
+
+</body>
+
+</html>

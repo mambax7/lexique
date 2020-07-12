@@ -1,0 +1,9 @@
+<tr>
+  <td>
+    <input type='checkbox' id='<{$post.id}>'  name='chksa_<{$post.idSeeAlso}>' OnClick='doRequest("chksa_<{$post.idSeeAlso}>",<{$post.idSeeAlso}> , "<{$refSeeAlsoo}>");' <{$post.checked}>><{$post.name}>
+    <{if $detailShowId==1}> : (<{$idLexique}>|<{$post.id}>|<{$post.idSeeAlso}>)<{/if}>
+  </td>
+  <td>
+    <{$post.shortDef}>
+  </td>
+</tr>

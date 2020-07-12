@@ -1,0 +1,48 @@
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th><{$libelle.lexique}></th>
+  </tr>
+  <tr>
+    <td class="head" style="padding:10px 10px 10px 10px;"><{$smarty.const._MD_LEX_HEY}></td>
+  </tr>
+</table>
+<br>
+<table width="100%" cellspacing="1" class="outer">
+<FORM ACTION="question.php?op=submit" METHOD=POST>
+<INPUT TYPE="hidden" NAME="state" VALUE="D">
+<INPUT TYPE="hidden" NAME="logname" VALUE="<{$logname}>">
+  <tr>
+    <th colspan="2"><{$smarty.const._MD_LEX_ASK_DEF}></th>
+  </tr>
+    <tr>
+      <td  class='even' style="TEXT-ALIGN: right"><b><{$libelle.lexique}></b></td>
+      <td  class='odd'><b><{$lexiqueList}></b</td>
+    </tr>
+  
+  <tr>
+    <td class='even' style="TEXT-ALIGN: right"><{$smarty.const._MD_LEX_LOOKINGFOR}></td>
+    <td class='odd'><INPUT TYPE="text" NAME="name" SIZE=50 VALUE="<{$name}>"></td>
+  </tr>
+  
+  <{if $capchaOk == 1}>  
+    <tr>
+      <td class='even' style="TEXT-ALIGN: right"><{$capchaLib}></td>
+      <td class='odd'><{$capcha}></td>
+    </tr>
+  <{/if}>
+  
+  
+  <tr>
+    <td class='even' style="TEXT-ALIGN: right">&nbsp;</td>
+    <td class='odd'><input type="submit" name="submit" value="<{$smarty.const._MD_LEX_SEND}>"></td>
+  </tr>
+  
+  
+  
+  
+  
+</form>
+</table>
+<br>
+<p><center><{$menu}></center></p>
+<{include file="db:lexique_footer.html"}>

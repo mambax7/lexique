@@ -1,0 +1,233 @@
+<FORM NAME="frmTogodo" ID="frmTogodo" ACTION="submit.php?op=submit&id=<{$id}>" METHOD=POST>
+</FORM>
+
+
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathCateRequestJS}>"></script>
+
+<{include file="db:lexique_toolbarre.html"}>
+
+  <!--  ************* 
+  <tr>
+<td><A href="#" onclick="testOnLink('Parfait 002');" id="toto"><B>Test JS sur lien </B></A></td>
+  </tr>
+  
+  <tr>
+<td><A href="#" onclick='testgetCategory("http://kiolo.com");'><B>Test JS sur lien </B></A></td>
+  </tr>
+  
+<br />  
+  -->
+
+
+
+
+<FORM NAME="frmLexique" ID="frmLexique" ACTION="submit.php?op=submit&id=<{$id}>" METHOD=POST>
+<table width="100%" cellspacing="1" class="outer">
+
+<INPUT TYPE="hidden" NAME="state" VALUE="N">
+<INPUT TYPE="hidden" NAME="logname" VALUE="<{$logname}>">
+<INPUT TYPE="hidden" NAME="id" VALUE="<{$id}>">
+<INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$info.idLexique}>">
+<INPUT TYPE="hidden" NAME="validation" VALUE="<{$validation}>">
+  <tr>
+    <th colspan="2"><{$smarty.const._MD_LEX_PRODEF2}> : <{$info.name}></th>
+  </tr>
+  <tr>
+    <td class='even' align='right'><{$libelle.terme}><{if $detailShowId==1}> : (<{$info.idLexique}>|<{$id}>|<{$idSeeAlso}>)<{/if}></td>
+    <td class='odd'><INPUT TYPE="text" NAME="name" SIZE=50 VALUE="<{$name}>"></td>
+  </tr>
+  <tr>
+    <td class='even' align='right'><{$smarty.const._MD_LEX_STAT_LIBELLE}></td>
+    <td class='odd'><{$list_status}></td>
+  </tr>
+  
+  <tr>
+    <td class='even' align='right'><{$libelle.shortdef}></td>
+    <td class='odd'><INPUT TYPE="text" NAME="shortDef" SIZE='90%' VALUE="<{$shortDef}>"></td>
+  </tr>
+  
+        <!-- ----- definitions ----- -->
+    <{foreach item=def from=$tDef}>
+<{if $def.detailShowDefinition <> 0}>
+  
+  
+  <tr>
+    <td class='even' align='right'><{$def.libelle}></td>
+    <td class='odd'><{$def.desc}></td>
+  </tr>
+
+  <INPUT TYPE="hidden" id='dooptions_<{$def.doindex}>'  NAME='dooptions_<{$def.doindex}>'  size='1%'  VALUE='<{$def.dooptions}>'>
+     
+  <{if $def.dooptions==1}>  
+    <td class='even' align='right'><{$const.smarty._MD_LEX_OPTIONS}></td>
+    <td class='odd'>
+        <input type='checkbox' NAME='dohtml_<{$def.doindex}>' size='5%' value='1'   <{if $def.dohtml == 1}>checked<{/if}> >  <{$smarty.const._MD_LEX_DO_HTML}><br>
+        <input type='checkbox' NAME='dosmiley_<{$def.doindex}>' size='5%' value='1' <{if $def.dosmiley == 1}>checked<{/if}> >  <{$smarty.const._MD_LEX_DO_SMILEY}><br>        
+        <input type='checkbox' NAME='doxcode_<{$def.doindex}>' size='5%' value='1'  <{if $def.doxcode == 1}>checked<{/if}> >  <{$smarty.const._MD_LEX_DO_XCODE}><br>
+        <input type='checkbox' NAME='dobr_<{$def.doindex}>' size='5%' value='1'     <{if $def.dobr == 1}>checked<{/if}> >  <{$smarty.const._MD_LEX_DO_BR}><br>                
+
+    </td>
+    
+  <{else}>  
+      <INPUT TYPE="hidden" id='dohtml_<{$def.doindex}>'  NAME='dohtml_<{$def.doindex}>'  size='1%'  VALUE='<{$def.dohtml}>'>  
+      <INPUT TYPE="hidden" id='dosmiley_<{$def.doindex}>'  NAME='dosmiley_<{$def.doindex}>'  size='1%'  VALUE='<{$def.dosmiley}>'>  
+      <INPUT TYPE="hidden" id='doxcode_<{$def.doindex}>'  NAME='doxcode_<{$def.doindex}>'  size='1%'  VALUE='<{$def.doxcode}>'>
+      <INPUT TYPE="hidden" id='dobr_<{$def.doindex}>'  NAME='dobr_<{$def.doindex}>'  size='1%'  VALUE='<{$def.dobr}>'>        
+  <{/if}>  
+  
+<{/if}>
+
+
+      
+    <{/foreach}>
+        
+        <!-- ----- fin definitions ----- -->
+  
+
+
+<!-- =============================================================== -->
+<{if $info.idProperty <> 0}>
+  <tr>
+  <td class='even' align='right'>
+<b><{$smarty.const._MD_LEX_PROPERTYS}></b>  
+
+  </td>
+  <td class='even' align='right'>  
+    <{foreach item=postp from=$dic_postp}>
+      <{include file="db:lexique_propertyEdit.html"}>
+    <{/foreach}>  
+  </td>  
+  </tr>
+<{/if}>
+
+<!-- =============================================================== 
+
+<table width="100%" cellspacing="1" class="outer">
+</table>
+-->
+
+
+
+
+
+
+  <tr>
+    <td class='even' align='right'><{$libelle.referentiel}></td>
+    <td class='odd'><input type='checkbox' id='chkReferentiel'  name='chkReferentiel' <{$refchecked}>>
+    <{$smarty.const._MD_LEX_REFERENCIEL_TITLE2}></td>
+  </tr>
+<!-- =============================================================== -->
+<{if $info.seealsomode==0}>
+  <tr>
+    <td class='even' align='right'><{$libelle.seealso}></td>
+    <td class='odd'><INPUT TYPE="text" NAME="seealso" SIZE='90%' VALUE="<{$seealso}>"></td>
+  </tr>
+  <tr>
+    <td class='even' align='right'></td>
+    <td class='even' align='left'><{$smarty.const._MI_LEX_SEARCHALSO_INFO}> : <{$smarty.const._LEXCST_SEPARTEUR_SEEALSO}></td>
+  </tr>
+<{/if}>
+<!-- =============================================================== -->
+<{if $info.seealsomode==2}>
+  <tr>
+    <td class='even' align='right'><{$libelle.seealso}></td>
+    <td class='odd'><INPUT TYPE="text" NAME="seealso" SIZE='90%' VALUE="<{$seealso}>"></td>
+  </tr>
+  <tr>
+    <td class='even' align='right'><{$libelle.seealso}></td>
+    <td class='even' align='left'><{$seeAlsoList}></td>
+  </tr>
+<{/if}>
+<!-- =============================================================== -->
+<{if $info.seealsomode==1}>
+
+
+<hr>
+  <tr>
+    <td class='even' align='right'><{$libelle.seealso}></td>
+    <!--<td class='even' align='left'><{$seealso}></td>-->
+    <td class='odd'><INPUT TYPE="text" NAME="seealso" SIZE='90%' VALUE="<{$seealso}>"></td>
+  </tr>
+  <tr>
+    <td class='even' align='right'></td>
+    <td class='odd'><INPUT TYPE="hidden" NAME="seeAlsoList" SIZE='90%' VALUE="<{$seeAlsoList}>"></td>
+  </tr>
+  </table>
+  
+  <table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <td class='even' align='center'><b><{$seelist}></b></td>  
+  </tr>
+  <tr>
+
+    <td class='even'>
+      <{include file="db:lexique_letterbar.html"}>
+    </td>
+  </tr>
+  </table>
+
+<table width="100%" cellspacing="1" class="outer">
+<{foreach item=post from=$dic_post}>
+  <{include file="db:lexique_postcat.html"}>
+<{/foreach}>
+  <!--
+  -->
+<br>
+</table>
+<hr>
+<table width="100%" cellspacing="1" class="outer">
+<{/if}>
+<!-- =============================================================== -->
+  <tr>
+    <td class='even' align='right'><{$libelle.category}></td>
+    <td class='odd'><{$category}></td>
+  </tr>
+
+<!-- =============================================================== -->
+  <{if $tag_ok == 1}>  
+    <tr>
+      <td class='even' style="TEXT-ALIGN: right"><{$tag_lib}></td>
+      <td class='odd'><{$tag_list}></td>
+    </tr>
+  <{/if}>
+
+ 
+<!-- =============================================================== -->  
+
+
+  <{if $capchaOk == 1}>  
+    <tr>
+      <td class='even' style="TEXT-ALIGN: right"><{$capchaLib}></td>
+      <td class='odd'><{$capcha}></td>
+    </tr>
+  <{/if}>
+  
+  <tr>
+    <td class='even' align='right'>&nbsp;</td>
+    <!--<td class='odd'><input type="submit" name="submit" value="<{$libelle.add}>">&nbsp;<input type="button" name="cancel" value="<{$smarty.const._CANCEL}>" onclick="javascript:history.go(-1);"></td>-->
+    <td class='odd'><input type="submit" name="submit" value="<{$libelle.add}>">
+    
+    <FORM NAME="frmLexiqueCancel" ACTION="submit.php?op=reset&id=<{$id}>" METHOD=POST>
+    <input type="submit" name="reset" value="<{$smarty.const._CANCEL}>">
+    </FORM>
+    </td>
+  </tr>
+
+</table>
+</form>
+<br>
+<p><center><{$menu}></center></p>
+<!-- =============================================================== -->
+
+
+
+<table width="100%" cellspacing="0" class="outer">
+  <tr>
+    <td class="foot" style="font-weight:normal;" align="right">
+      <span class="itemPoster"><{$libelle.copyright}></span>
+    </td>
+  </tr>
+</table>
+<br>

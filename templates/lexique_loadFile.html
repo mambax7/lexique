@@ -1,0 +1,116 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathCateRequestJS}>"></script>
+
+<{include file="db:lexique_toolbarre.html"}>
+<!-- =============================================================== -->
+
+    <div class="head">
+      <span class="itemTitle">
+          <{$smarty.const._MD_LEX_ATTACH_FILES }>
+      </span>
+    </div>
+
+    <div class="blockContent">
+      <span class="itemTitle">
+          <{$textintro}>
+      </span>
+    </div>
+
+
+    <div class="head">
+      <span class="itemTitle">
+          <{$libelle.terme}> : <{$post.name}> : <{$post.shortdef}>
+      </span>
+    </div>
+
+<!-- =============================================================== -->
+<table width="100%" cellspacing="0" class="outer">    
+
+<{if $nbFiles > 0}>
+  <FORM METHOD='post' action='loadFile.php?op=delete'>
+  <INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$idLexique}>">
+  <INPUT TYPE="hidden" NAME="id" VALUE="<{$id}>">
+  
+      <tr>
+        <td class="even" style="font-weight:normal;" align="right">
+          <{$smarty.const._MD_LEX_FILES}>  
+        </td>
+  
+        <td class="odd" style="font-weight:normal;" align="left">
+          <{$lstFiles}>
+        </td>
+      </tr>  
+      
+      <tr>
+        <td class="even">    
+        </td>    
+        <td class="odd">
+           <input type='submit' name='delete' value='<{$smarty.const._MD_LEX_DELETE}>' >    
+        </td>    
+      </tr>
+  </form>
+<{/if}>
+<!-- =============================================================== -->
+
+<INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$idLexique}>">
+<INPUT TYPE="hidden" NAME="idTerme" VALUE="<{$idTerme}>">
+
+
+
+<FORM METHOD='post' enctype='multipart/form-data'>
+<INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$idLexique}>">
+<INPUT TYPE="hidden" NAME="idTerme" VALUE="<{$id}>">
+
+  <tr>
+    <td class="even" align="right">
+      <{$smarty.const._MD_LEX_DOWNLOAD}>
+    </td>
+
+    <td class="odd" >    
+      <input name='fileup' type='file' size=50 value='toto'>
+      <input type='submit' name='ok' value='<{$smarty.const._MD_LEX_DOWNLOAD}>' >
+    </td>
+  </tr>    
+</form>
+
+<FORM METHOD='post' action='detail.php?id=<{$id}>' enctype='multipart/form-data'>
+<INPUT TYPE="hidden" NAME="idLexique" VALUE="<{$idLexique}>">
+<INPUT TYPE="hidden" NAME="idTerme" VALUE="<{$id}>">
+
+  <tr>
+    <td class="even" align="right">
+    </td>
+
+    <td class="odd" align='center'>    
+      <input type='submit' name='ok' value='<{$smarty.const._CLOSE}>' >
+    </td>
+  </tr>    
+</form>
+
+</table>
+
+
+
+
+
+
+
+<!-- =============================================================== -->
+
+
+
+<table width="100%" cellspacing="0" class="outer">
+  <tr>
+    <td class="foot" style="font-weight:normal;" align="right">
+      <span class="itemPoster"><{$libelle.copyright}></span>
+    </td>
+  </tr>
+</table>
+<br>
+
+
+
+
+
+<!--**********************************************************************-->

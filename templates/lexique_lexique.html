@@ -1,0 +1,35 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+
+<{include file="db:lexique_toolbarre.html"}>
+
+
+<br>
+<{if $link_admin}>
+  <table width="100%" cellspacing="1" class="outer">
+    <tr>
+      <th><{$smarty.const._CPHOME}></th>
+    </tr>
+   <tr>
+      <td class="even" style="text-align:center;"><{$counter}></td>
+    </tr>
+  
+    <tr>
+      <td class="odd" style="text-align:center;">  <!--<{$link_admin_adddef}><br>--><{$newdeff}></td>
+    </tr>
+  </table>
+<{/if}>
+
+<!--<{include file="db:lexique_searchhead.html"}>-->
+<{include file="db:lexique_letterbar.html"}>
+<b><{$info.nbmsgbypage}>&nbsp;<{$smarty.const._MD_LEX_LASTDEF}></b>
+<br><br>
+
+<{foreach item=post from=$dic_post}>
+  <{include file="db:lexique_post.html"}>
+  <{if $info.detailShowInterligne}><br><{/if}>
+<{/foreach}>
+
+<{include file="db:lexique_letterbar.html"}>
+<{include file='db:system_notification_select.html'}>
+<{include file="db:lexique_footer.html"}>

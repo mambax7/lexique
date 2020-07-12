@@ -1,0 +1,25 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th>
+      <{$libelle.lexique}>: <{$lexiqueList}>
+      <{if $showMenuList == 1}><{$doActionMenu}><{/if}> 
+      <{if $showMenuBtn  == 1}><{$doActionBtn}><{/if}>   
+    </th>
+
+  </tr>
+<!--  <tr>
+    <td class="even" style="text-align:center;"><{$counter}></td>
+  </tr> -->
+</table>
+<!--<{include file="db:lexique_searchhead.html"}>-->
+<{include file="db:lexique_letterbar.html"}>
+<{foreach item=post from=$dic_post}>
+  <{include file="db:lexique_post.html"}>
+  <{if $info.detailShowInterligne}><br><{/if}>
+<{/foreach}>
+<!--<div align="center"><{$dic_page_nav}></div><br>-->
+<{include file="db:lexique_letterbar.html"}>
+<{include file="db:lexique_footer.html"}>

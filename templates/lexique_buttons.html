@@ -1,0 +1,21 @@
+<{if $mode >= 0 & $mode<>2}>
+    <{if $post.follow != '' & $info.followPosition > 0 }>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>
+
+    <{if $detailShowButtons <> 0}>
+      <div class="itemFoot">
+        <span class="itemAdminLink">
+          <{if $detailShowVisit == 1}><{$post.visit}><{/if}> 
+          <{if $detailShowId == 1}><{$post.categoryBinStr}><{/if}>
+          <{$post.admin}>
+
+          <{$post.comments}><{$post.print}>&nbsp;<{$post.mail}>
+        </span>
+      </div>
+    <{/if}>
+<{/if}>

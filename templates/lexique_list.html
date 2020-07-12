@@ -1,0 +1,17 @@
+<div class="item">
+  <div class="itemHead"><span class="itemTitle">
+    <A HREF='lexique.php?idLexique=<{$post.idLexique}>'><{$post.icone}> <{$post.name}> - <{$post.count}> <{$post.entry}></a>
+  </div>  
+  
+  <div class="itemText">
+    <p><{$post.introtext}></p>    
+  </div>
+</div>
+<{if $post.showNotation == 1}>
+  <div class="item">
+    <div class="itemInfo">
+      <{$post.notation}>
+    </div>
+  </div>
+<{/if}>
+<br>

@@ -1,0 +1,93 @@
+<div class="item">
+  <div class="itemHead"><span class="itemTitle"><A HREF='detail.php?id=<{$post.id}>'><{$post.name}></a><{if $detailShowShortDef==1}> : <{$post.shortDef}><{/if}><{if $detailShowId==1}> : (<{$idLexique}>|<{$post.id}>|<{$post.idSeeAlso}>)<{/if}></span></div>
+<!-- =============================================================== -->
+<{if $detailShowDefinition1 <> 0}>
+  <div class="itemInfo" style="text-align:left"><b><{$post.def1}></b> </div>
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition1}></p>    
+  </div>
+<{/if}>  
+  
+<{if $detailShowDefinition2 <> 0}>  
+  <div class="itemInfo" style="text-align:left"><b><{$post.def2}></b> </div>  
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition2}></p>
+  </div>
+<{/if}>
+
+<{if $detailShowDefinition3 <> 0}>  
+  <div class="itemInfo" style="text-align:left"><b><{$post.def3}></b> </div>  
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition3}></p>
+  </div>
+<{/if}>
+<!-- =============================================================== -->
+<!-- 
+<{if $post.categories <> ''}>
+  <div class="itemInfo" style="text-align:left"><b>Catégories : <{$post.categoryName}></b> </div>  
+  <div class="itemBody">
+    <p class="itemText"><{$post.categories}></p>
+  </div>
+<{/if}>
+ 
+-->
+
+
+<{if $post.categories <> ''}>
+  <div class="itemHead" style="height:1px border:0px"><span class="itemTitle"></span></div>
+  <div class="itemInfo" style="text-align:left"><b><{$post.lang_category}> : </b><{$post.categories}></div>  
+<{/if}>
+
+
+
+
+<!-- =============================================================== -->
+<{if $idProperty <> 0}>
+  <div class="itemHead" style="height:1px border:0px"><span class="itemTitle"></span></div>
+  <div class="itemInfo" style="text-align:left"><b><{$post.property}></b> </div>
+  <table>
+      <tr>
+          <td width = '25%' align='right'><i><{$post.propertyName}></i></td>
+          <td><{$post.propertyValue}></td>   
+    </tr>
+  </table>
+
+
+<table class='table'>
+
+    <{foreach item=postp from=$dic_postp}>
+      <{include file="db:lexique_propertyView.html"}>
+    <{/foreach}>  
+
+</table>
+
+<{/if}>
+
+
+
+
+<!-- =============================================================== -->
+<!-- 
+<{if $post.detailShowSeeAlso>0}>
+  <div class="itemHead"><span class="itemTitle"><{$lang_seealso2}> : <{$post.seealso}></span></div>
+<{/if}>
+ -->
+  
+<{if $post.detailShowSeeAlso>0}>
+  <div class="itemHead" style="height:1px border:0px"><span class="itemTitle"></span></div>
+  <div class="even">
+  <span class="itemTitle">
+  <{$lang_seealso2}> : <{$post.seealso}>
+  </span>
+
+  </div>
+<{/if}>
+
+  <div class="itemHead" style="height:1px border:0px"><span class="itemTitle"></span></div>
+<!-- =============================================================== -->
+<{if $detailShowButtons <> 0}>
+  <div class="itemFoot">
+    <span class="itemAdminLink"><{if $detailShowVisit==1}><{$post.visit}><{/if}> <{if $link_admin}><{$post.categoryBinStr}>     <{$post.admin}><{/if}><{$post.comments}><{$post.print}>&nbsp;<{$post.mail}></span>
+  </div>
+<{/if}>
+</div>

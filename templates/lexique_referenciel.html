@@ -1,0 +1,35 @@
+﻿<div class="item">
+
+  <div class="itemHead"><span class="itemTitle">
+  <A HREF='detail.php?id=<{$post.id}>'><{$post.name}></a>
+    <{if $detailShowShortDef==1}> : <{$post.shortDef}><{/if}>
+    <{if $detailShowId==1}> : (<{$idLexique}>|<{$post.id}>|<{$post.idSeeAlso}>)<{/if}>
+  </span></div>
+
+<{if $detailShowDefinition1 <> 0}>
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition1}></p>
+  </div>
+<{/if}> 
+ 
+<{if $detailShowDefinition2 <> 0}>  
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition2}></p>
+  </div>
+<{/if}> 
+ 
+<{if $detailShowDefinition3 <> 0}>  
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition3}></p>
+  </div>
+<{/if}>
+
+<{if $post.detailShowSeeAlso>0}>
+  <div class="itemHead"><span class="itemTitle"><{$libelle.seealso}> : <{$post.seealso}></span></div>
+<{/if}>
+<{if $info.detailShowButtons <> 0}>
+  <div class="itemFoot">
+    <span class="itemAdminLink"><{if $detailShowVisit==1}><{$post.visit}><{/if}> <{if $link_admin}><{$post.categoryBinStr}>     <{$post.admin}><{/if}><{$post.comments}><{$post.print}>&nbsp;<{$post.mail}></span>
+  </div>
+<{/if}>
+</div>

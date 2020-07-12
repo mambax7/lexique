@@ -1,0 +1,396 @@
+[Config]
+Relative path=1
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.HideOutput=0
+Compilator.LogType=0
+DefaultCPIndex=0
+LogtoEnd=1
+DontOpen=0
+FileFormat=0
+[Project tree]
+_lexique
+	+lexique
+		-version
+			versions\lex_2_15.php
+			versions\lex_2_16.php
+		+_externes
+			..\jjd_tools\_common\include\gp_globe.php
+			..\jjd_tools\_common\include\functions.php
+			..\jjd_tools\_common\include\editor_functions.php
+			..\jjd_tools\_common\include\debugTools.php
+			..\jjd_tools\_common\include\constantes.php
+			..\jjd_tools\_common\include\version.php
+			..\jjd_tools\_common\include\strbin_function.php
+			..\jjd_tools\_common\include\letterbar_function.php
+			..\jjd_tools\_common\include\jjd_tools.php
+			..\jjd_tools\_common\include\jjd_groupe.php
+			..\jjd_tools\_common\include\html_functions.php
+			..\jjd_tools\_common\include\js\jjd_tools.js
+			..\jjd_tools\_common\include\adminOnglet\adminOnglet.php
+			..\jjd_tools\_common\include\sysfile_functions.php
+			..\jjd_tools\_common\include\version_functions.php
+		-doc
+			doc\admin_doc.php
+		-admin
+			admin\admin_access.php
+			admin\admin_caption.php
+			admin\admin_category.php
+			admin\admin_family.php
+			admin\admin_footer.php
+			admin\admin_header.php
+			admin\admin_lexique.php
+			admin\admin_property.php
+			admin\admin_selecteur.php
+			admin\del-def.php
+			admin\index.html
+			admin\index.php
+			admin\lex_action.php
+			admin\lex_update_seealso.php
+			admin\menu.php
+			admin\mod-def.php
+			admin\admin_catMenu.php
+			admin\admin_jjd.php
+			admin\admin_list.php
+			admin\admin_doc.php
+			admin\admin_version.php
+		+blocks
+			blocks\index.html
+			blocks\lexique_block_new.php
+			blocks\lexiqueList_block.php
+		-class
+			class\clsHtmlDoc.php
+			class\clsPCache.php
+		-images
+			-arrows
+				-Copy of medium
+					images\arrows\Copy of medium\arrow0.gif
+					images\arrows\Copy of medium\arrow1.gif
+					images\arrows\Copy of medium\arrow10.gif
+					images\arrows\Copy of medium\arrow11.gif
+					images\arrows\Copy of medium\arrow2.gif
+					images\arrows\Copy of medium\arrow3.gif
+					images\arrows\Copy of medium\arrow4.gif
+					images\arrows\Copy of medium\arrow5.gif
+					images\arrows\Copy of medium\arrow6.gif
+					images\arrows\Copy of medium\arrow7.gif
+					images\arrows\Copy of medium\arrow8.gif
+					images\arrows\Copy of medium\arrow9.gif
+				-large
+					images\arrows\large\arrow0.gif
+					images\arrows\large\arrow1.gif
+					images\arrows\large\arrow10.gif
+					images\arrows\large\arrow11.gif
+					images\arrows\large\arrow2.gif
+					images\arrows\large\arrow3.gif
+					images\arrows\large\arrow4.gif
+					images\arrows\large\arrow5.gif
+					images\arrows\large\arrow6.gif
+					images\arrows\large\arrow7.gif
+					images\arrows\large\arrow8.gif
+					images\arrows\large\arrow9.gif
+				-medium
+					images\arrows\medium\arrow0.gif
+					images\arrows\medium\arrow1.gif
+					images\arrows\medium\arrow10.gif
+					images\arrows\medium\arrow11.gif
+					images\arrows\medium\arrow2.gif
+					images\arrows\medium\arrow3.gif
+					images\arrows\medium\arrow4.gif
+					images\arrows\medium\arrow5.gif
+					images\arrows\medium\arrow6.gif
+					images\arrows\medium\arrow7.gif
+					images\arrows\medium\arrow8.gif
+					images\arrows\medium\arrow9.gif
+					images\arrows\medium\Thumbs.db
+				-small
+					images\arrows\small\arrow0.gif
+					images\arrows\small\arrow1.gif
+					images\arrows\small\arrow10.gif
+					images\arrows\small\arrow11.gif
+					images\arrows\small\arrow2.gif
+					images\arrows\small\arrow3.gif
+					images\arrows\small\arrow4.gif
+					images\arrows\small\arrow5.gif
+					images\arrows\small\arrow6.gif
+					images\arrows\small\arrow7.gif
+					images\arrows\small\arrow8.gif
+					images\arrows\small\arrow9.gif
+			-lexIcones
+				images\lexIcones\carnets.gif
+				images\lexIcones\dib_0000.gif
+				images\lexIcones\dib_0001.gif
+				images\lexIcones\dib_0002.gif
+				images\lexIcones\dib_0003.gif
+				images\lexIcones\dib_0004.gif
+				images\lexIcones\dib_0005.gif
+				images\lexIcones\dib_0006.gif
+				images\lexIcones\dib_0007.gif
+				images\lexIcones\dib_0008.gif
+				images\lexIcones\dib_0009.gif
+				images\lexIcones\dib_0010.gif
+				images\lexIcones\dib_0011.gif
+				images\lexIcones\dib_0012.gif
+				images\lexIcones\dib_0013.gif
+				images\lexIcones\dib_0014.gif
+				images\lexIcones\dib_0015.gif
+				images\lexIcones\dib_0016.gif
+				images\lexIcones\dib_0017.gif
+				images\lexIcones\dib_0018.gif
+				images\lexIcones\dib_0019.gif
+				images\lexIcones\dib_0020.gif
+				images\lexIcones\dib_0021.gif
+				images\lexIcones\dib_0022.gif
+				images\lexIcones\dib_0023.gif
+				images\lexIcones\dib_0024.gif
+				images\lexIcones\dib_0025.gif
+				images\lexIcones\dib_0034.gif
+				images\lexIcones\dib_0035.gif
+				images\lexIcones\dib_0036.gif
+				images\lexIcones\dib_0037.gif
+				images\lexIcones\dib_0038.gif
+				images\lexIcones\dib_0039.gif
+				images\lexIcones\dib_0040.gif
+				images\lexIcones\dib_0041.gif
+				images\lexIcones\dib_0042.gif
+				images\lexIcones\dib_0043.gif
+				images\lexIcones\dib_0044.gif
+				images\lexIcones\dib_0045.gif
+				images\lexIcones\dib_0046.gif
+				images\lexIcones\dib_0047.gif
+				images\lexIcones\dib_0048.gif
+				images\lexIcones\dib_0049.gif
+				images\lexIcones\dib_0050.gif
+				images\lexIcones\dib_0051.gif
+				images\lexIcones\dib_0052.gif
+				images\lexIcones\dib_0053.gif
+				images\lexIcones\dib_0054.gif
+				images\lexIcones\dib_0055.gif
+				images\lexIcones\dib_0056.gif
+				images\lexIcones\dib_0057.gif
+				images\lexIcones\dib_0058.gif
+				images\lexIcones\dib_0059.gif
+				images\lexIcones\dib_0060.gif
+				images\lexIcones\dib_0061.gif
+				images\lexIcones\dib_0062.gif
+				images\lexIcones\dib_0063.gif
+				images\lexIcones\dib_0064.gif
+				images\lexIcones\dib_0065.gif
+				images\lexIcones\dib_0066.gif
+				images\lexIcones\dib_0067.gif
+				images\lexIcones\dib_0068.gif
+				images\lexIcones\dib_0069.gif
+				images\lexIcones\dib_0070.gif
+				images\lexIcones\dib_0071.gif
+				images\lexIcones\livre1.gif
+				images\lexIcones\livre2.gif
+				images\lexIcones\livre3.gif
+				images\lexIcones\livre4.gif
+				images\lexIcones\livres3.gif
+				images\lexIcones\monde.gif
+				images\lexIcones\none.gif
+				images\lexIcones\outils.gif
+				images\lexIcones\personne1.gif
+				images\lexIcones\personne2.gif
+				images\lexIcones\personne4.gif
+				images\lexIcones\personnes1.gif
+				images\lexIcones\repertoire1.gif
+				images\lexIcones\Thumbs.db
+			-spin
+				images\spin\dib_0026.gif
+				images\spin\dib_0027.gif
+				images\spin\dib_0028.gif
+				images\spin\dib_0029.gif
+				images\spin\dib_0030.gif
+				images\spin\dib_0031.gif
+				images\spin\dib_0032.gif
+				images\spin\dib_0033.gif
+				images\spin\spinDown01.gif
+				images\spin\spinDown1.gif
+				images\spin\spinDown11.gif
+				images\spin\spinUp01.gif
+				images\spin\spinUp1.gif
+				images\spin\spinUp11.gif
+				images\spin\Thumbs.db
+				images\spin\zzspinDown11.gif
+				images\spin\zzspinUp11.gif
+			images\comm.gif
+			images\friend.gif
+			images\index.html
+			images\info.gif
+			images\info0.gif
+			images\info1.gif
+			images\info2.gif
+			images\info3.gif
+			images\info4.gif
+			images\lexique_logo.png
+			images\print.gif
+			images\Thumbs.db
+		+include
+			include\constantes.php
+			include\lexique_function.php
+			include\category_functions.php
+			include\comment_functions.php
+			include\index.html
+			include\letterbar_function.php
+			include\lex_seealso.php
+			include\lex_seealso_temp.php
+			include\lexiqueform.inc.php
+			include\search.inc.php
+			include\seealso_function.php
+			include\seealso_function-0.php
+			include\seealso_function-1.php
+			include\temp_function.php
+		-js
+			js\index.html
+			js\lex_catrequest.js
+			js\lex_tools.js
+		-language
+			-english
+				-doc
+					language\english\doc\Help-Categorie.html
+					language\english\doc\Help-Lexique.html
+					language\english\doc\Help-Libelle.html
+					language\english\doc\Help-Selecteur.html
+					language\english\doc\index.html
+					language\english\doc\Intro.html
+					language\english\doc\Options-Generales.html
+				language\english\admin.php
+				language\english\blocks.php
+				language\english\main.php
+				language\english\modinfo.php
+			+french
+				-doc
+					language\french\doc\Help-Categorie.html
+					language\french\doc\Help-Lexique.html
+					language\french\doc\Help-Libelle.html
+					language\french\doc\Help-Selecteur.html
+					language\french\doc\index.html
+					language\french\doc\Intro.html
+					language\french\doc\Options-Generales.html
+				language\french\admin.php
+				language\french\blocks.php
+				language\french\main.php
+				language\french\modinfo.php
+			-german
+				language\german\admin.php
+				language\german\blocks.php
+				language\german\main.php
+				language\german\modinfo.php
+			-spanish
+				language\spanish\admin.php
+				language\spanish\blocks.php
+				language\spanish\main.php
+				language\spanish\modinfo.php
+		-log
+			log\log.txt
+		-sql
+			sql\index.html
+			sql\mysql.sql
+			sql\JJD.sql
+		-templates
+			+blocks
+				templates\blocks\index.html
+				templates\blocks\lexique_block_new.html
+				templates\blocks\lexiqueList_block.html
+			templates\lexique_post.html
+			templates\lexique_detail.html
+			templates\lexique_index.html
+			templates\lexique_letter.html
+			templates\lexique_letterbar.html
+			templates\lexique_lexique.html
+			templates\lexique_list.html
+			templates\lexique_postcat.html
+			templates\lexique_print.html
+			templates\lexique_propertyEdit.html
+			templates\lexique_propertyView.html
+			templates\lexique_question.html
+			templates\lexique_referenciel.html
+			templates\lexique_search.html
+			templates\lexique_searchExp.html
+			templates\lexique_searchhead.html
+			templates\lexique_submit.html
+			templates\lexique_buttons.html
+			templates\lexique_catMenu.html
+			templates\lexique_toolbarre.html
+			templates\lexique_footer.html
+			templates\lexique_loadFile.html
+		comment_delete.php
+		comment_edit.php
+		comment_new.php
+		comment_post.php
+		comment_reply.php
+		Description.txt
+		detail.php
+		header.php
+		index.php
+		jjd.php
+		letter.php
+		lexique.php
+		list.php
+		logovg.gif
+		notification_update.php
+		popup.php
+		print.php
+		question.php
+		readme.txt
+		search.php
+		searchExp.php
+		xoops_version.php
+		logovd.gif
+		submit.php
+		loadFile.php
+[Open project files]
+0=admin\admin_access.php
+1=blocks\lexiqueList_block.php
+2=include\lexique_function.php
+3=templates\lexique_submit.html
+4=submit.php
+5=..\jjd_tools\_common\include\sysfile_functions.php
+6=xoops_version.php
+7=..\jjd_tools\_common\include\functions.php
+8=include\seealso_function.php
+9=include\seealso_function-0.php
+10=..\..\..\..\..\..\..\..\..\seealso_function-0.php
+11=include\seealso_function-1.php
+[Selected Project Files]
+Main=
+Selected=xoops_version.php
+[admin\admin_access.php]
+TopLine=57
+Caret=5,78
+[blocks\lexiqueList_block.php]
+TopLine=7
+Caret=76,32
+[include\lexique_function.php]
+TopLine=191
+Caret=133,218
+[templates\lexique_submit.html]
+TopLine=171
+Caret=36,192
+[submit.php]
+TopLine=507
+Caret=11,512
+BookMark0=1,146
+BookMark1=1,520
+[..\jjd_tools\_common\include\sysfile_functions.php]
+TopLine=491
+Caret=1,506
+[xoops_version.php]
+TopLine=16
+Caret=16,47
+[..\jjd_tools\_common\include\functions.php]
+TopLine=722
+Caret=1,740
+[include\seealso_function.php]
+TopLine=37
+Caret=5,55
+[include\seealso_function-0.php]
+TopLine=229
+Caret=9,247
+[..\..\..\..\..\..\..\..\..\seealso_function-0.php]
+TopLine=40
+Caret=10,67
+[include\seealso_function-1.php]
+TopLine=197
+Caret=9,215

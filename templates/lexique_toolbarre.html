@@ -1,0 +1,35 @@
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th align='left'>
+      <{if $showLexiqueList == 1}>
+        <{$libelle.lexique}> : <{$lexiqueList}>
+      <{else}>
+        <{$libelle.lexique}> : <{$info.name}> (<{$info.idLexique}>)
+      <{/if}>
+    </th>   
+
+
+  <{if $showMenuList == 1}>
+    <th align='right'>       
+      <{$doActionMenu}> 
+    </th>
+  <{/if}>    
+  
+  <{if $showMenuBtn  == 1}>
+    <th align='right'>      
+        <{$doActionBtn}>
+    </th>
+  <{/if}> 
+
+  </tr>
+</table>
+
+<{if $info.introtext !=''}>
+  <table width="100%" cellspacing="1" class="outer">
+    <tr>
+      <td class="even" style="padding:10px 10px 10px 10px;">
+        <{$info.lexIcone}><{$info.introtext}>
+      </td>
+    </tr>
+  </table>
+<{/if}>

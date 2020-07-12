@@ -1,0 +1,33 @@
+lexique from JJD
+=======================
+
+installation:
+=============
+
+Just copy the directory 'lexique' under your modules path and
+install the module as usual.
+
+
+Guarantee
+=========
+This tool is "AS-IS" and no guarantee of any kind is given.
+Use it at your own risk. You have been warned.
+
+
+You can contact me under:     JJD@kiolo.com
+or at my website:             http://ace.wakasensei.fr
+
+
+**********************************************************************************
+Module de type dictionaire.
+
+- Gestion des catègories
+- Champs 'SeeAlso", 'ShortDefinitiion', 
+- Intégration de Koivi pour la saisie des définition
+- Selecteurs alphabètique paramètrable
+- Moteur de recherche sur des mots entier ou partiels, dans les différents champs, sur catégories, ...
+- Barre d'icones pour l'administration
+
+
+
+

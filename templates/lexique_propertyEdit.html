@@ -1,0 +1,25 @@
+<{if $postp.rowBefore == 1}>  
+  <tr>  
+    <td class='even' align='right' colspan=2>
+      <hr style="size:2px;">  
+    </td>  
+  </tr>
+<{/if}> 
+
+<tr>
+  <td class='even' align='right'>
+    <{$postp.name}>
+  </td>
+
+  <td class='odd'>
+    <{if $postp.idList == 0}>   
+          <INPUT TYPE="text" id='<{$postp.idPropertySet}>'  NAME="property_<{$postp.idPropertySet}>" SIZE='90%' VALUE="<{$postp.value}>">
+    <{/if}>
+  
+    <{if $postp.idList > 0}>  
+          <{$postp.list}>    
+    <{/if}>  
+  </td>  
+  
+</tr>  
+

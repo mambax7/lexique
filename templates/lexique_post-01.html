@@ -1,0 +1,14 @@
+post<div class="item">
+  <div class="itemHead"><span class="itemTitle"><A HREF='detail.php?id=<{$post.id}>'><{$post.name}></a> : <{$post.shortdef}></span></div>
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition}></p>
+  </div>
+  <div class="itemBody">
+    <p class="itemText"><{$post.definition}></p>
+  </div>
+  <div class="itemHead"><span class="itemTitle"><{$lang_seealso2}> : <A HREF='detail.php?id=<{$post.seealso}>'><{$post.seealso}></a></span></div>
+  <div class="itemFoot">
+    <p><span class="itemAdminLink"><{$post.print}>&nbsp;<{$post.mail}></span></p>
+    <span class="itemAdminLink"><{if $link_admin}><{$post.admin}><{/if}><{$post.comments}></span>
+  </div>
+</div>

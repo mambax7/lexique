@@ -1,0 +1,190 @@
+<div class="item">
+      <div class="itemHead">
+        <span class="itemTitle">
+          <{if $intlinkspopup == 0}>
+              <A HREF='detail.php?id=<{$post.id}>&idLexique=<{$post.idLexique}>'><{$post.name}></a>          
+          <{/if}>          
+          
+          <{if $intlinkspopup == 1}>
+              <a href="javascript:openWithSelfMain('popup.php?id=<{$post.id}>&idLexique=<{$idLexique}>','',<{$intlinkswidth}>,<{$intlinksheight}>);">
+                <{$post.name}>
+              </a>         
+          <{/if}>          
+          
+
+          <{if $detailShowShortDef==1}> : <{$post.shortDef}><{/if}>
+          <{if $detailShowId==1}> : (<{$idLexique}>|<{$post.id}>|<{$post.idSeeAlso}>)<{/if}>
+          
+    <{if $info.followPosition == 0  & $mode == 0}>
+          <{$post.follow}>   
+    <{/if}>      
+            
+          
+          
+        </span>
+      </div>
+    <!-- =============================================================== -->
+    <{if $info.buttonPosition == 0}>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    <!-- =============================================================== -->
+    <{if $showDefinition1 == 1}>
+<div class="item">    
+      <div class="itemInfo" style="text-align:left"><b><{$libelle_definition1}></b> </div>
+      <div class="itemBody">
+        <p class="itemText"><{$post.definition1}></p>    
+      </div>
+    <{/if}>  
+    <!-- =============================================================== -->
+    <{if $info.followPosition == 1 }>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>      
+    
+    <{if $info.buttonPosition == 1 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    <!-- =============================================================== -->
+      
+    <{if $showDefinition2 == 1}>  
+</div><div class="item">
+      <div class="itemInfo" style="text-align:left"><b><{$libelle_definition2}></b> </div>  
+      <div class="itemBody">
+        <p class="itemText"><{$post.definition2}></p>
+      </div>
+    <{/if}>
+    
+    <!-- =============================================================== -->
+    <{if $info.followPosition == 2 }>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>      
+    <{if $info.buttonPosition == 2 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    <!-- =============================================================== -->
+    
+    <{if $showDefinition3 == 1}>  
+</div><div class="item">
+      <div class="itemInfo" style="text-align:left"><b><{$libelle_definition3}></b> </div>  
+      <div class="itemBody">
+        <p class="itemText"><{$post.definition3}></p>
+      </div>
+    <{/if}>
+
+    <!-- =============================================================== -->
+    <{if $info.followPosition == 3 }>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>      
+    <{if $info.buttonPosition == 3 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    
+    <!-- =============================================================== -->
+    <{if $post.categories <> '' AND $accessCategory == 1}>
+</div><div class="item">    
+      <div class="itemInfo" style="text-align:left">
+        <b><{$post.lang_category}> : </b><{$post.categories}>
+      </div>  
+    <{/if}>
+    
+    
+    <!-- =============================================================== -->
+    <{if $info.followPosition == 4 }>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>      
+    <{if $info.buttonPosition == 4 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    <!-- =============================================================== 
+
+
+    <{if $idProperty <> 0 AND $accessProperty == 1}>
+</div><div class="item">    
+      <div class="itemInfo" style="text-align:left"><b><{$post.property}></b> </div>
+      <table>
+          <tr>
+              <td width = '25%' align='right' style=" margin: 0px; padding: 0px;"><i><{$post.propertyName}></i></td>
+              <td style=" margin: 0px; padding: 0px;"><{$post.propertyValue}></td>   
+        </tr>
+      </table>
+    
+    <{/if}>
+    -->
+
+
+
+
+
+    <!-- =============================================================== -->
+
+    <{if $idProperty <> 0 AND $accessProperty == 1}>
+</div><div class="item">    
+      <div class="itemInfo" style="text-align:left"><b><{$post.property}></b> </div>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">
+          <{foreach item=ppt from=$post.ppt}>
+            <{include file="db:lexique_propertyView.html"}>
+          <{/foreach}>
+      </table>
+      
+    <{/if}>
+    <!-- =============================================================== -->
+    <{if $info.followPosition == 5}>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+        <tr><td>  
+          <{$post.follow}>  
+        </td></tr>
+      </table>    
+    <{/if}>      
+    <{if $info.buttonPosition == 5 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    <!-- =============================================================== -->
+
+
+    <{if $post.detailShowSeeAlso > 0}>
+</div>
+<div class="item">
+      <div class="even">
+        <span class="even"><b><{$libelle.seealso}> : </b><{$post.seealso}></span>
+        <{if $info.followPosition > 5}>
+            <{$post.follow}>  
+        <{/if}>
+
+      </div>
+    <{/if}>
+</div>    
+    <!-- =============================================================== -->
+    <{if $post.nbFiles > 0 & $detailShowDownload==1}>
+      <table  border="0" width="100%" cellspacing="0" cellpadding="0">    
+          <tr>
+            <td class="even"><b><{$smarty.const._MD_LEX_ATTACHED_FILES}></b></td>      
+            <td class="even">           
+              <{foreach item=file from=$post.files}>
+                <A href='<{$post.folderFiles}><{$file}>'><{$file}></A><br>
+              <{/foreach}>
+            </td>
+        </tr>  
+      </table>        
+    <{/if}>
+    
+    <!-- =============================================================== -->
+    <{if $info.buttonPosition > 5 }>
+        <{include file="db:lexique_buttons.html"}>  
+    <{/if}>
+    
+</div>

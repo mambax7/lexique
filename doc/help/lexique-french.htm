@@ -1,0 +1,1084 @@
+<table border="1" width="100%">
+  <tr>
+    <td width="17%">
+      <p align="center"><br>
+      <img border="0" src="img/lexique_logo.png" width="92" height="52"><br>
+    </td>
+    <td width="83%">
+      <p align="center"><b><font size="5">LEXIQUE</font></b></td>
+  </tr>
+  <tr>
+    <td width="1%">Auteur :&nbsp;</td>
+    <td width="114%">Jean-Jacques DELALANDRE</td>
+  </tr>
+  <tr>
+    <td width="1%">VERSION&nbsp;</td>
+    <td width="114%">2.01.03</td>
+  </tr>
+  <tr>
+    <td width="1%">Contact</td>
+    <td width="114%"><a href="mailto:JJD@kiolo.com">mailto:JJD@kiolo.com</a></td>
+  </tr>
+  <tr>
+    <td width="1%">Site</td>
+    <td width="114%"><a href="http://ace.wakasensei.fr">http://xoops.kiolo.com</a></td>
+  </tr>
+  <tr>
+    <td width="1%">Installation</td>
+    <td width="114%">Just copy the directory 'lexique' under your modules path and
+      install the module as usual.</td>
+  </tr>
+  <tr>
+    <td width="1%">Guarantee</td>
+    <td width="114%">This tool is "AS-IS" and no guarantee of any kind is given.<br>
+      Use it at your own risk. You have been warned.</td>
+  </tr>
+  <tr>
+    <td width="1%">Licence</td>
+    <td width="114%">
+      <p class="MsoNormal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">This
+      program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free
+      Software Foundation; either version 2 of the License, or (at your option)
+      any later version.<o:p>
+      </o:p>
+      </span></p>
+      <p class="MsoNormal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">You
+      may not change or alter any portion of this comment or credits of
+      supporting developers from this source code or any supporting source code
+      which is considered copyrighted (c) material of the original comment or
+      credit authors.<o:p>
+      </o:p>
+      </span></p>
+      <p class="MsoNormal"><span lang="EN-GB" style="mso-ansi-language:EN-GB">This
+      program is distributed in the hope that it will be useful,<span style="mso-spacerun: yes">&nbsp;
+      </span>but WITHOUT ANY WARRANTY; without even the implied warranty of<span style="mso-spacerun: yes">&nbsp;
+      </span>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.<span style="mso-spacerun: yes">&nbsp;
+      </span>See the GNU General Public License for more details.</span></td>
+  </tr>
+  <tr>
+    <td width="1%"><span lang="EN-GB" style="mso-ansi-language:EN-GB">site
+      exemple
+      </span></td>
+    <td width="114%">
+      <span style="mso-ansi-language: EN-GB" lang="EN-GB"><a href="http://wakasensei.fr">http://wakasensei.fr</a></span></td>
+  </tr>
+</table>
+&nbsp;
+<h1>Historique</h1>
+<p>
+Ce module était à l'origine celui Peter Nagl 'Dictionary' auquel j'ai apporté
+quelques modifications mineures dans un premier temps.<br>
+Puis j'ai apporté quelques aménagements majeurs et de fil en aiguille, le
+module n'a plus rien à voir avoir avec celui d'origine ci ce n'est le sujet.&nbsp;</p>
+<p>Pour info vous trouverez le module de Peter Nagl 'Dictionary' à cette
+addresse.<br>
+      <a href="http://www.frxoops.org/modules/referentiel/singlefile.php?cid=18&amp;lid=159">http://www.frxoops.org/modules/referentiel/singlefile.php?cid=18&amp;lid=159</a><br>
+      <br>
+</p>
+<h1>Description
+</h1>
+<p>Liste des caractéristiques du module</p>
+<p>Lexique</p>
+<ul>
+  <li>Multi lexique: Possibilité de créer autant de lexique que l'on souhaite</li>
+  <li> Ajouter un champ 'shortDefinition" (définition courte)</li>
+  <li>Ajout de 2 zones de de définitions soit 3 au total. Par exemple, pour une
+    bibliothèque il est possible de définir une zone pour le résumé, une
+    zone pour les avis, et une zone pour des extrait.</li>
+  <li> ajouter un champ 'seeAlso' (voir aussi)</li>
+  <li> Calcul automatique de la première lettre, au lieu de la saisir (j'oubliais à chaque fois)</li>
+  <li>Mode de gestion du champ &quot;vor aussi&quot; par identifiant ou bien par
+    expression.</li>
+  <li> intégration de plusieurs éditeurs, koivi, TinyEditor, inbetwen,&nbsp; dans le champ définition</li>
+  <li>Ajout d'icône pour identifier les lexique.</li>
+  <li> Choix des informations affichées (Définition courte, définition, voir
+      aussi, ...)</li>
+</ul>
+<p>Rubrique Voir aussi</p>
+<ul>
+  <li>Taille des icônes flèche de la rubrique &quot;voir aussi&quot;&nbsp;
+    adaptable.</li>
+  <li> Ajout d'une icône verte sur les liens actif du champ 'seeAlso' et une rouge pour les inactifs. Permet de
+      repérer les termes non définis dans le lexique.</li>
+  <li> Ajout de la notion de &quot;terme de référence&quot; qui permet
+      d'afficher les termes de la rubrique &quot;Voir aussi&quot; avec leur
+      définitions courte.</li>
+</ul>
+<p>Catégories</p>
+<ul>
+  <li>Affectation de catégorie multiples.</li>
+  <li>Recherche sur les catégorie</li>
+</ul>
+<p>Sélecteur</p>
+<ul>
+  <li> Affichage du sélecteur alphabétique en haut et en bas de page</li>
+  <li> Possibilité d'afficher le sélecteur alphabétique sur une ou plusieurs lignes</li>
+  <li> Paramétrage du sélecteur soit à partir d'une liste de caractères à définir, soit a partie des
+    caractères utilisés  dans le lexique.</li>
+</ul>
+<p>Base</p>
+<ul>
+  <li> les champs de la table ont été optimisés.</li>
+</ul>
+<p>Recherche</p>
+<ul>
+  <li>Ajout de critères de recherches, sur les mots complets, ou sur une partie,
+    début, fin, ..</li>
+  <li>les catégories, ...</li>
+  <li>Possibilité de rechercher que sur le terme, ou le champ &quot;définition
+    courte&quot; ou dans les définitions</li>
+  <li>Intégration du module dans les recherches de XOOPS.</li>
+</ul>
+<p>Permissions</p>
+<ul>
+  <li>Chaque lexique peut ou non&nbsp; être masqué à certains groupes.</li>
+  <li>Chaque éléments du lexique peut être rendu visible ou non selon le
+    groupe d'appartenance de l'utilisateur. Il est donc possible de masquer
+    certaines informations selon le groupe.</li>
+  <li>Chaque action (création, modification édition, ... peut être paramétrée
+    en fonction du groupe. Il est donc possible d'autoriser certains groupes à
+    créer modifier et supprimer par exemple.</li>
+</ul>
+      <p>
+      Autres</p>
+<ul>
+  <li> Options d'affichage plus&nbsp; détaillées</li>
+  <li>Personnalisation des titres de rubriques.</li>
+  <li> Gestion d'un cache pour le calcul des liens de la rubrique &quot;Voir
+      aussi&quot;.</li>
+</ul>
+<hr>
+<h1>Options générales
+</h1>
+<table border="1" width="100%">
+  <tr>
+    <td width="13%" align="center"><b>Options</b></td>
+    <td width="87%" align="center"><b>Descriptions</b></td>
+  </tr>
+  <tr>
+    <td width="15%">Éditeur</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0">Permet de sélectionner
+      l'éditeur à utiliser pour la création et la modification des termes.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Quelque soit l'éditeur choisi
+      (mis à part zone de texte et DHTML qui sont installé par défaut), ce
+      dernier doit être installé pour être exploitable.&nbsp;</p>
+      <p style="margin-top: 4; margin-bottom: 0">Vous les trouverez sur le site
+      de Xoops France.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Éditeurs implémentés:&nbsp;
+      &quot;Koivi&quot;, &quot;Tiny&quot;, &quot;InBetwwen&quot;</p>
+      <p style="margin-top: 4; margin-bottom: 0">Si vous souhaiter intégrer un
+      autre éditeur par vous même, il y a une fonction &quot;getEditeur&quot;
+      dans le script &quot;include/jjd/editor_function.php&quot; dans laquelle il suffit
+      d'ajouter un cas. Il faut bien sur modifier aussi le script
+      &quot;version.php&quot; en conséquence en ajoutant le nouvel éditeur
+      dans le paramètre &quot;editeur&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">L'éditeur DHTML est intégré
+      à XOOPS donc pas d'installation particulière pour celui ci.</td>
+  </tr>
+  <tr>
+    <td width="15%">Liste des lettres</td>
+    <td width="85%"><span style="FONT-WEIGHT: normal">Éditeur à utiliser pour
+      la création ou la modification des définitions</span></td>
+  </tr>
+  <tr>
+    <td width="15%"><span style="FONT-WEIGHT: normal">Alphabet par défault</span></td>
+    <td width="85%">Valeur par défault utilisée lors de la création d'un
+      nouveau sélecteur.&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Menu liste</td>
+    <td width="85%"><span style="FONT-WEIGHT: normal">Affiche une liste
+      déroulante donnant accès aux actions possibles. Cette liste est
+      affichée en haut des pages juste à côté de la liste des lexiques.<br>
+      Ce sont les mêmes fonctions que celles de l'option suivantes &quot;Menu
+      bouton&quot;.<br>
+      Il est possible d'afficher l'un ou l'autre, ou les deux.</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Menu bouton</td>
+    <td width="85%"><span style="FONT-WEIGHT: normal">Affiche la liste d'actions
+      possibles sous forme de bouton image, idem &quot;Menu liste&quot;.</span></td>
+  </tr>
+  <tr>
+    <td width="13%">Nombre de catégories maximum</td>
+    <td width="87%"><span style="FONT-WEIGHT: normal">Nombre maximum de
+      catégories affichées dans le formulaire d'administration.<br>
+      Seules les catégories actives ou non nulles seront affichées dans le
+      formulaire d'édition des termes.<br>
+      Il est conseillé de laisser la valeur par défaut.</span></td>
+  </tr>
+</table>
+&nbsp;
+<p>&nbsp;</p>
+<hr>
+<h1>Lexique</h1>
+<h2 align="left">Mode de gestion</h2>
+      <p style="margin-top: 4; margin-bottom: 0">Le module peut fonctionner sous
+      deux modes: qui concerne la gestion de la rubrique &quot;Voir aussi&quot;,
+      soit&nbsp; par expression soit par identifiant;<br>
+      </p>
+      <p style="margin-top: 4; margin-bottom: 0"><b>Par expression:</b><br>
+      Lorsqu'une expression est ajoutée dans cette rubrique, le module crée
+      automatiquement un lien sur ce terme dans le lexique, si il existe.<br>
+      Ce qui veut dire que l'on peut ajouter des expressions dans la rubrique
+      &quot;Voir aussi&quot; sans que ces dernière aient d'entrées dans le
+      lexique.<br>
+      De plus si une expression est ajoutée, et qu'elle a plusieurs entrées
+      dans le lexique, un lien sur chacune des entrées dans le lexique sera
+      générée dans la rubrique &quot;Voir aussi&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Par exemple supposons que les
+      entrées suivantes sont ajoutées dans le lexique, et que l'on ajoute dans
+      la rubrique &quot;Voir aussi&quot; l'expression &quot;Roue&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">L'application générera trois
+      entrées, une sur chacune des expressions &quot;Roue&quot;, même si elles ne
+      sont pas directement concernées.</p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+      <table border="1" width="100%">
+        <tr>
+          <td width="8%">Roue</td>
+          <td width="38%">parade exécutée par le paon pour courtiser une
+            femelle.</td>
+          <td width="54%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="8%">Roue</td>
+          <td width="38%">Exercice de gymnastique</td>
+          <td width="54%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="8%">Roue</td>
+          <td width="38%">équipement d'un voiture qui permet de la faire avancer</td>
+          <td width="54%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="8%">Sport</td>
+          <td width="38%">Activité qui permet d'évaluer ses capacités
+            physiques.</td>
+          <td width="54%">Roue - Roue - Roue</td>
+        </tr>
+      </table>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+      <p style="margin-top: 4; margin-bottom: 0"><b>Par identifiant:</b></p>
+      <p style="margin-top: 4; margin-bottom: 0">Dans ce mode il faut
+      sélectionner chaque entrée individuellement à ajouter dans la rubrique
+      &quot;voir aussi&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Dans ce cas on pourra définir
+      avec précision quelle expression &quot;roue&quot; il faut ajouter dans la
+      rubrique &quot;Voir aussi&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Dans ce mode les expressions de
+      cette rubrique doivent exister dans le lexique pour y être associées.</p>
+      <p style="margin-top: 4; margin-bottom: 0"><br>
+      <b>Choix du mode:</b></p>
+      <p style="margin-top: 4; margin-bottom: 0"><font color="#FF0000"><b>Il est important de définir le
+      mode de gestion de la rubrique &quot;Voir aussi&quot; dès le début</b></font>.</p>
+      <p style="margin-top: 4; margin-bottom: 0">En changeant de mode en cours
+      de route on prend le risque de perdre les informations de la rubrique
+      &quot;Vois&nbsp; aussi&quot; qui devra être reconstituée manuellement.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Il y a bien deux
+      fonctionnalités qui permettent de palier plus ou moins à cet
+      inconvénient, mais sans garantie du résultat Une remplace les expression
+      par leur identifiant et détruit les expressions qui ne serait pas dans le
+      lexique, et l'autre fait l'opération inverse. Elle son accessible dans le
+      panneau de configuration du module. Toute fois il n'est pas recommandé de
+      les utiliser. Je m'en suis servi pendant le développement pour passer
+      d'un mode à l'autre avec le même lexique de test, et je les ai laissé
+      accessible. je ne garantie pas le résultat.</p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center"><b><font color="#FF0000" size="5">Donc
+      première chose:<br>
+      définissez le mode de gestion de la rubrique &quot;Voir
+      aussi&quot;</font></b></p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center"><b><font color="#FF0000" size="5">et
+      évitez de changer d'avis.</font></b></p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center">&nbsp;</p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center">&nbsp;</p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center">&nbsp;</p>
+<table border="1" width="100%">
+  <tr>
+    <td width="13%" align="center"><b>Options</b></td>
+    <td width="87%" align="center"><b>Descriptions</b></td>
+  </tr>
+  <tr>
+    <td width="15%">Sélecteur</td>
+    <td width="85%">Permet de choisir le sélecteur associé à ce lexique.<br>
+      Si la liste est vide il faut d'abord créer au moins un sélecteur.
+      Normalement, il y a au moins trois sélecteurs d'installer par défault.
+      attention de ne pas les supprimer.</td>
+  </tr>
+  <tr>
+    <td width="15%">Catégories</td>
+    <td width="85%">Permet de choisir le jeu de catégorie associé à ce
+      lexique.<br>
+      Si la liste est vide il faut d'abord créer au moins un jeu de
+      catégories.</td>
+  </tr>
+  <tr>
+    <td width="15%">Libellés</td>
+    <td width="85%">Permet de choisir le jeu de titres associés à ce lexique.<br>
+      Par défault ce sont les titres définis dans les fichiers de constantes.</td>
+  </tr>
+  <tr>
+    <td width="15%">Propriétés</td>
+    <td width="85%">Ce sont des champs que l'on peut ajouter pour y mettre
+      divers informations. Ces informations apparaissent juste après le dernier
+      champ de définition, avant la rubrique &quot;voir aussi&quot;.<br>
+      Par exemple pour une bibliothèque il est possible d'ajouter les champs
+      &quot;ISBN&quot;, &quot;éditeur&quot;, &quot;Date de sortie&quot; ect.<br>
+      Il faut définir les jeux de propriétés pour qu'il apparaissent dans la
+      liste déroulante. Le même jeu de propriétés peut être utilisé pour
+      plusieurs lexiques.</td>
+  </tr>
+  <tr>
+    <td width="15%">Nombre de définitions par Page</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0">Défini le nombre de finitions
+      du lexique affichées dans chaque page; Attention de ne pas forcer ce
+      paramètre à une valeur trop importante, au risque de ralentir
+      considérablement l'affichage des pages.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Une valeur entre 5 et 10 reste
+      raisonnable, si tout est affiché.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Une valeur jusque 20 ou 30 peut
+      être envisagé si la description ou la rubrique &quot;voir aussi&quot; ne
+      sont pas affichées.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Le mieux est de faire quelques
+      tests dans des environnements de productions, et d'ajuster ensuite ce
+      paramètre ou l'affichage en fonction des résultats.</td>
+  </tr>
+  <tr>
+    <td width="15%">Affichage</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0">Plusieurs paramètres
+      permettent de définir un affichage adapté aux besoins:</p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+      <table border="1" width="100%">
+        <tr>
+          <td width="21%">
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Définition
+            courte</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Affichage de la
+            définition courte</td>
+        </tr>
+        <tr>
+          <td width="21%">
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Interligne</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Affichage des interlignes
+            entre chaque définition. permet d'aérer la liste ou de la
+            condensé un petit peu</td>
+        </tr>
+        <tr>
+          <td width="21%">
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Montrer
+            l'identifiant de expression</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Affichage de
+            l'identifiant de l'expression entre parenthèse.</p>
+            <p style="margin-top: 4; margin-bottom: 0">J'ai utilisé cette
+            option pendant le développement pour vérifier que les
+            enregistrements que je traitais.</p>
+            <p style="margin-top: 4; margin-bottom: 0">J'ai été tenté de la
+            supprimer, puis après tout je me suis dit que cela pourrait être
+            utile dans certains cas de pouvoir visualiser l'identifiant de
+            l'entrée dans le lexique.<br>
+            Dans la dernière version il y a trois identifiant d'afficher
+            séparé par un pipe:</p>
+            <p style="margin-top: 4; margin-bottom: 0">(Id du lexique | id unique
+            de l'expression dans la table | Id unique pour le lexique)</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="21%">Détail: Boutons affichés</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Pour chaque expression
+            affichée, juste en dessous, quelques boutons permettent d'accéder
+            à différentes fonctionnalités, la plus part directement associés
+            à l'expression ou ils se trouvent.</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+            <ul>
+              <li>Éditer</li>
+              <li>Ajouter</li>
+              <li>Effacer</li>
+              <li>Envoyer une Définition à un Ami</li>
+              <li>Cherche</li>
+              <li>Imprimer une Définition</li>
+              <li>Commentaires</li>
+              <li>Demander une Définition</li>
+            </ul>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="21%">Détail: Voir aussi</td>
+          <td width="79%"><span style="FONT-WEIGHT: normal">Affichage de la
+            rubrique &quot;voir aussi&quot;. permettra si on ne gère pas cette
+            option de rendre l'affichage plus rapide.</span></td>
+        </tr>
+        <tr>
+          <td width="21%">
+            <p style="margin-top: 4; margin-bottom: 0">Voir aussi: Info-Icon</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Icône placé avant le
+            mot dans la rubrique &quot;voir aussi&quot;. Il s'agit d'une flèche
+            qui pointe et sépare les expression de la rubrique &quot;voir
+            aussi&quot;. La couleur de cet icône peut varié en fonction des
+            circonstances:</p>
+            <p style="margin-top: 4; margin-bottom: 0">La taille et la couleur
+            sont paramétrables dans le panneau de configuration du modules.</td>
+        </tr>
+        <tr>
+          <td width="21%">
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Compter les
+            consultations</p>
+            <p style="margin-top: 4; margin-bottom: 0">et</p>
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Visite</td>
+          <td width="79%">
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Compter les
+            consultations</p>
+            <p style="margin-top: 4; margin-bottom: 0">Oui: Active le comptage
+            des consultations et autorise l'affichage.<br>
+            Non: Désactive le comptage des consultations et interdit
+            l'affichage.</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+            <p style="margin-top: 4; margin-bottom: 0">Détail: Visite</p>
+            <p style="margin-top: 4; margin-bottom: 0">Affiche le nombre de
+            consultations pour chaque terme</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+            <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+        </tr>
+      </table>
+      <p style="margin-top: 4; margin-bottom: 0"><br>
+      <br>
+      </p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Voir aussi: mode de recherche</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><b>si le mode de gestion de la
+      rubrique &quot;voir aussi&quot; est &quot;par expression&quot;,</b> la
+      liste des lien est construite en fonction de ce paramètre. Si vous avez
+      choisi &quot;Commence par&quot;, la liste de la rubrique &quot;voir
+      aussi&quot; contiendra toues les pressions du lexique qui commence par
+      l'expression ajoutée&quot;.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Par exemple supposons que nous
+      ayons dans le lexique les expression suivantes:&nbsp;</p>
+      <ul>
+        <li>Boiter</li>
+        <li>Boire</li>
+        <li>Boisson</li>
+        <li>Bois tendre</li>
+        <li>Boîtier</li>
+        <li>Boisé</li>
+        <li>Bois</li>
+        <li>Sabre de bois.</li>
+        <li>Langue de bois</li>
+        <li>Du bois de chauffage</li>
+        <li>Être aux abois</li>
+      </ul>
+      <p style="margin-top: 4; margin-bottom: 0">et que dans l'expression
+      &quot;eau&quot; on ajoute l'expression &quot;Bois&quot; le résultat sera
+      le suivant selon le paramètre choisi:</p>
+      <table border="1" width="100%">
+        <tr>
+          <td width="22%"><b>Paramètre</b></td>
+          <td width="78%"><b>Résultat</b></td>
+        </tr>
+        <tr>
+          <td width="22%">mot entier</td>
+          <td width="78%"><b>Bois</b></td>
+        </tr>
+        <tr>
+          <td width="22%">Au début</td>
+          <td width="78%"><b>Boi</b>sson, <b>Bois</b>é, <b>Bois</b>, <b>Bois</b>
+            tendre, être aux a<b>bois</b></td>
+        </tr>
+        <tr>
+          <td width="22%">a la fin</td>
+          <td width="78%">Sabre de <b>bois</b>, langue de <b>bois</b></td>
+        </tr>
+        <tr>
+          <td width="22%">Mot entier dans l'expression</td>
+          <td width="78%">Sabre de <b>bois</b>, Du <b>bois</b> de chauffage, <b>Bois</b>,
+            Langue de <b>bois</b></td>
+        </tr>
+      </table>
+      <p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Voir aussi: Synchroniser les expressions</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">Selon
+      le mode de gestion de la rubrique 'Voir aussi':<br>
+      -Par expression : Crée automatiquement l'expression si elle n'existe pas
+      dans le lexique.<br>
+      -Par identifiant : Ajoute automatiquement l'identifiant courant dans dans
+      l'expression sélectionnée, et permet ainsi l'aller et retour de l'un à
+      l'autre.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Cette
+      option est à manipuler avec précaution si vous ne voulez pas que la
+      rubrique &quot;voir aussi&quot; grossisse de trop.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Supposons
+      que vous ayez les entrées suivantes dans le lexique:</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">-
+      Voiture</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">-
+      Véhicule</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Si
+      ce paramètre est positionner sur &quot;oui&quot; et que vous ajoutez dans
+      la rubrique &quot;voir aussi&quot;&nbsp; de &quot;voiture&quot;
+      l'expression &quot;véhicule&quot;, automatiquement l'expression dans
+      l'expression &quot;véhicule&quot; la rubrique &quot;voir aussi&quot;
+      contiendra l'expression &quot;voiture&quot;</span></p>
+      <table border="1" width="100%">
+        <tr>
+          <td width="20%">Expression</td>
+          <td width="80%">Rubrique &quot;voir aussi&quot;</td>
+        </tr>
+        <tr>
+          <td width="20%"><span style="font-weight: normal">Voiture</span></td>
+          <td width="80%"><span style="font-weight: normal">Véhicule</span></td>
+        </tr>
+        <tr>
+          <td width="20%"><span style="font-weight: normal">Véhicule</span></td>
+          <td width="80%"><span style="font-weight: normal">Voiture</span></td>
+        </tr>
+      </table>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Cela
+      double les liens à chaque fois, mais d'un autre côté cela peut être
+      intéressant quand on veut faire un aller retour systématique.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Détail: Terme de référence</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">Mise
+      en valeur des termes lorsque ce sont des références dans la
+      rubrique&nbsp;</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Si
+      une expression est défini comme une référence (case à cocher dans la
+      fenêtre d'édition), la rubrique &quot;voir aussi&quot; contiendra non
+      seulement les liens sur les expressions de la rubrique, mais affichera
+      aussi la définition courte de l'expression associée.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Cela
+      permet d'un coup d'oeil de de se faire une idée sans nécessairement
+      allez voir l'expression de la rubrique &quot;voir aussi&quot; puis revenir
+      sur l'expression d'origine.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Attention
+      de ne pas systématiquement définir une expression comme étant une
+      référence, au risque de ralentir l'affichage des pages.</span>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Exemples:</span>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Supposons
+      les expression suivantes avec la rubrique 'Voir aussi''</span>
+      <table border="1" width="100%">
+        <tr>
+          <td width="11%"><b>Expression</b></td>
+          <td width="50%"><b>Définition courte</b></td>
+          <td width="22%"><b>Voir aussi</b></td>
+          <td width="17%"><b>Référence</b></td>
+        </tr>
+        <tr>
+          <td width="11%">Bleu</td>
+          <td width="50%">Couleur primaire dans le mode additif</td>
+          <td width="22%">primaire,Arc en ciel</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="11%">Vert</td>
+          <td width="50%">Couleur primaire dans le mode additif</td>
+          <td width="22%">primaire,Arc en ciel</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="11%">Blanc</td>
+          <td width="50%">Mélange de l'ensemble des couleur primaire</td>
+          <td width="22%">&nbsp;</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="11%">Orange</td>
+          <td width="50%">Mélange de jaune et de rouge</td>
+          <td width="22%">Arc en ciel</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="11%">Primaire</td>
+          <td width="50%">Qualificatif attribué au couleur de base dans le mode
+            additif ou soustractif.</td>
+          <td width="22%">Magenta,Bleu,Blanc</td>
+          <td width="17%">Oui</td>
+        </tr>
+        <tr>
+          <td width="11%">Violet</td>
+          <td width="50%">Mélange de jaune et bleu</td>
+          <td width="22%">Arc en ciel</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="11%">Arc en ciel</td>
+          <td width="50%">Ensemble des couleur du spectre visible par l'être
+            humain</td>
+          <td width="22%">Orange,Bleu,Vert,Violet</td>
+          <td width="17%">oui</td>
+        </tr>
+        <tr>
+          <td width="11%">Magenta</td>
+          <td width="50%">Couleur primaire dans le mode soustractif</td>
+          <td width="22%">primaire</td>
+          <td width="17%">&nbsp;</td>
+        </tr>
+      </table>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">La
+      consultation de l'expression 'Primaire donnera:</span>
+      <table border="1" width="100%">
+        <tr>
+          <td width="15%"><b>Expression</b></td>
+          <td width="27%"><b>Définition courte</b></td>
+          <td width="62%"><b>Voir aussi</b></td>
+        </tr>
+        <tr>
+          <td width="15%">Primaire</td>
+          <td width="27%">Qualificatif attribué au couleur de base dans le mode
+            additif ou soustractif.</td>
+          <td width="62%">Bleu:Couleur primaire dans le mode additif<br>
+            Vert:Couleur primaire dans le mode additif<br>
+            Magenta: Couleur primaire dans le mode soustractif<br>
+          </td>
+        </tr>
+        <tr>
+          <td width="15%">Arc en ciel</td>
+          <td width="27%">Ensemble des couleur du spectre visible par l'être
+            humain</td>
+          <td width="62%">Bleu:Couleur primaire dans le mode additif<br>
+            Vert:Couleur primaire dans le mode additif<br>
+            Violet:Mélange de jaune et bleu<br>
+            Orange:Mélange de jaune et de rouge</td>
+        </tr>
+        <tr>
+          <td width="15%">Bleu</td>
+          <td width="27%">Couleur primaire dans le mode additif</td>
+          <td width="62%">Bleu:Couleur primaire dans le mode additif<br>
+            Vert:Couleur primaire dans le mode additif<br>
+            Violet:Mélange de jaune et bleu<br>
+            Orange:Mélange de jaune et de rouge<br>
+            Magenta: Couleur primaire dans le mode soustractif</td>
+        </tr>
+      </table>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Popup</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">Oui:
+      Affiche la Définition dans une fenêtre.<br>
+      Non: Affiche la définition dans la fenêtre courante.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">J'ai
+      gardé cette option qui était dans le module d'origine dont je me suis
+      inspiré, mais personnelement je préfère naviguer dans le lexique,
+      plutôt que d'ouvrir des fenêtres. Cette fenêtre mériterais d'être
+      enrichie, mais comme je ne l'utilise pas pour mes besoins personnels, je
+      le ferai en fonction de la demande.</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Voir aussi: Nombre de lignes</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">N<span style="FONT-WEIGHT: normal">ombre
+      de termes affichés dans le formulaire d'édition pour la rubrique <VOIR aussi>
+      &quot;voir aussi&quot;<br>
+      Cette option n'est valide que si le mode de gestion est <PAR Identifiant>
+      &quot;par identifiant&quot;</span></span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Lorsque
+      l'on est en édition d'une expression, un sélecteur (liste de lettres)
+      permet d'afficher les expressions qui commence par la lettre choisie.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Une
+      case à cocher permet de définir si l'expression apparaîtra dans la
+      rubrique &quot;voir aussi&quot;.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Ce
+      paramètre permet simplement de finir le nombre&nbsp; d'expressions
+      affichées en même temps.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Une
+      fois cochées, les expressions restent sélectionnées si on change de
+      lettre, il n'est pas nécessaire de valider à chaque fois.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Voir aussi: Gestion du cache des liens</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">Cette
+      option permet de gérer un cache pour les liens de la rubrique - Voir
+      aussi:<br>
+      0 : Pas de cache (risque d'affichage plus lent)<br>
+      1 : Les liens sont mis en cache (affichage optimisé)<br>
+      2 : Comme le 1, mais ajoute (*) pour indiquer que les liens viennent du
+      cache (pour débugger)</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Je
+      me suis rendu compte que de reconstruire la liste des liens de la rubrique
+      &quot;voir aussi&quot; pouvait être très consommateur de ressource.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">j'ai
+      donc ajouté une gestion de cache pour éviter de la refaire à chaque
+      fois. Une fois construite, la liste est stockée dans un champ de la table
+      pour chaque expression, et lors de l'affichage, c'est cette liste qui est
+      récupérée et affichée. chaque modification d'une expression génère
+      la reconstruction de la liste des liens, mais il peut être nécessaire de
+      faire le ménage. Une option dans le panneau de configuration permet de
+      vider les cache. Cela provoquera la reconstruction des liens, ce qui
+      ralentira un peu lors du premier affichage seulement.</span></td>
+  </tr>
+</table>
+<p style="margin-top: 4; margin-bottom: 0">&nbsp;</p>
+<hr>
+<h1>Catégories</h1>
+      <p style="margin-top: 4; margin-bottom: 0">Une famille est un ensemble de
+      catégories. C'est la famille qu'il faut associer au lexique pour pouvoir
+      utiliser les catégories associées.</p>
+      <p style="margin-top: 4; margin-bottom: 0">Une famille peut être
+      utilisée par plusieurs lexiques.</p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">plusieurs
+      paramètres permettent de définir les catégories.&nbsp;</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Une
+      expressions peut appartenir à plusieurs catégories.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Il
+      est conseillé dé définir les familles et les catégories avant la
+      création des lexiques.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Il
+      est toujours possible d'ajouter des catégories par la suite, et bien
+      que possible, évitez d'en supprimer, il est préférable de les
+      désactiver.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Pour
+      supprimer une catégorie il suffit d'effacer le contenu de la zone et
+      d'enregistrer..</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">C'est
+      la méthode de gestion des catégories que j'ai choisie qui impose cette
+      gestion. Je ne voulais pas créé de table associative, mais juste un
+      champ avec une valeur binaire dont chaque bit correspondait à une
+      catégorie. Puis je me suis aperçu que dans MySql je ne pouvais pas faire
+      de recherche sur un champ de ce type, du coup je l'ai remplacé par un
+      champ &quot;text&quot; ou chaque caractère représente un bit (0 ou 1).
+      et avec les expressions régulières j'ai pu gérer du simili binaire.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">J'ai
+      fait ce choix pour optimiser les recherches.</span></p>
+<p></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="18%" align="center"><b>Options</b></td>
+    <td width="82%" align="center"><b>Descriptions</b></td>
+  </tr>
+  <tr>
+    <td width="18%"><span style="font-weight: normal">Afficher les catégories</span></td>
+    <td width="82%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Cette
+      options permet de rechercher notamment des expressions qui appartiennent
+      à la même catégorie.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Les
+      options de recherche se trouvent en haut de chaque page du lexique. Pour
+      effectuer une recherche par catégorie, sélectionnez dans la liste
+      déroulante la catégorie voulue et cliquer sur &quot;chercher&quot;.</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="20%"><span style="font-weight: normal">Nombre de catégories</span></td>
+    <td width="80%"><span style="FONT-WEIGHT: normal">Cette option est
+      paramétrable dans les options du modules. elle permet de fixer le nombre
+      maximum de catégories pour tous les lexiques. Dans tous les cas seules les
+      catégories définies (chaîne non vide) et active sont affichées.<br>
+      Attention de ne pas diminuer cette valeur en deçà du nombre de
+      catégories déjà utilisée par les familles définies.<br>
+      Cette option est juste destinée à diminué l'affichage des catégories
+      au de leur définition. Il est recommandé de laisser la valeur
+      par défaut (32).</span></td>
+  </tr>
+  <tr>
+    <td width="20%"><span style="font-weight: normal">Afficher les index des
+      catégories</span></td>
+    <td width="80%"><span style="FONT-WEIGHT: normal">Affiche à gauche des
+      boutons l'index des catégories aux quelles appartient le mot. Option
+      utilisée pour debugue</span></td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<hr>
+<h1>Libellés</h1>
+Les libellés qui désignent notamment les zones
+      d'information (Nom, Définition courte, Définition, Voir aussi, ...)
+      peuvent être adaptés à chaque lexique.<br>
+      Pour ce faire dans le panneau de configuration du module, sélectionnez
+      &quot;Libellé&quot; pour ajouter ou modifier un jeu de libellé
+      existant.<br>
+      Les libellé laissé vide prendront la valeur par défaut définie dans les
+      fichiers de constantes des répertoires de langues.<br>
+      Les libellés sont propre à chaque langue, c'est à dire que si votre si
+      est paramétrer en anglais, c'est un jeu de libellés anglais qui sera
+      défini et utilisé. Si vous changer et vous paramétrez le site en
+      français, il faudra recréer les jeux de libellés, et c'est ce dernier
+      qui sera utilisé. Le jeu de libellé anglais est conservé, et si de
+      nouveau on paramètre le site en anglais, ce sont les jeux de libellés
+      anglais qui seront de nouveau utilisé.
+      <p>Ensuite pour chaque lexique il faut affecter le jeu de libellés
+      aproprié.<br>
+      </p>
+<p></p>
+<table border="1" width="100%">
+  <tr>
+    <td width="100%">Quelques jeux sont déjà définis pour la version
+      française. Si Vous souhaitez y ajouter des jeux de libellés dans d'autre
+      langues, n'hésitez pas à me les envoyer à <a href="mailto:jjd@kiolo.com">mailto:jjd@kiolo.com</a>
+      sous la forme suivante: (En gras les codes utilisés dans l'application,
+      la langue correspond au nom du répertoire de langue de Xoops)</td>
+  </tr>
+  <tr>
+    <td width="100%">Langue = French<br>
+      Nom : Répertoire de personnalité<br>
+      --------------------------------------------<br>
+      <b>code</b>,<b>Langue</b>,<b>libellé<br>
+      ---------------------------------------------------</b><br>
+      <b>'categories</b>', 'french', 'Nationamités'<br>
+      <b>'category</b>', 'french', 'Nationamité'<br>
+      <b>'definition</b>', 'french', 'Résumé'<br>
+      <b>'definitions</b>', 'french', 'définitions'<br>
+      <b>'lesDefinitions</b>', 'french', 'les définitions'<br>
+      <b>'lexique</b>', 'french', 'Lexique'<br>
+      <b>'referentiel</b>', 'french', 'Référentiel'<br>
+      <b>'seealso</b>', 'french', 'Consulter aussi'<br>
+      <b>'shortdef</b>', 'french', 'Discipline'<br>
+      <b>'terme</b>', 'french', 'Nom'<br>
+      <b>'termesAndDefinitions</b>', 'french', ''</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<h1>Sélecteur</h1>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Le
+      sélecteur est la liste de lettres qui se trouve en tête et en queue de
+      la page, et qui permet un accès rapide à tous les termes qui commencent
+      par le caractère sélectionné.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">En
+      général cela correspond à l'alphabet: exemple:</span></p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center"><span style="font-weight: normal">[
+      A B C D E F G H I J K L M N P Q R S T U V W X Y&nbsp; Z ]</span></p>
+<p style="margin-top: 4; margin-bottom: 0">Il est possible d'ajouter
+      d'autre caractères ou de les remplacer. Prenons l'exemple d'une liste de
+      pièces détachées dont les codes sont composés que de chiffres, vous
+      pouvez définir le sélecteur ainsi:</p>
+      <p style="margin-top: 4; margin-bottom: 0" align="center">[ 0 1 2 3 4 5 6
+      8 9 ]</p>
+      <p style="margin-top: 4; margin-bottom: 0">Certaines langues n'utilisent
+      pas toutes les lettres, et il est parfois difficile de les connaître à
+      l'avance. Il est possible de laisser le module construire le sélecteur à
+      partir de la première lettre de chaque termes trouvé dans le dictionnaire,
+      ainsi les nouvelles lettres seront automatiquement ajoutées.</p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Cela
+      devrait permettre dans certaines langues d'afficher des caractères
+      particuliers comme le &quot;double s&quot; en allemand ou les consonnes
+      accentuées en espagnol.</span></p>
+      <p>Il est possible aussi de modifier la présentation du sélecteur, sur
+      une ou plusieurs lignes, changer le séparateur, ...</p>
+<table border="1" width="100%">
+  <tr>
+    <td width="13%" align="center"><b>Options</b></td>
+    <td width="87%" align="center"><b>Descriptions</b></td>
+  </tr>
+  <tr>
+    <td width="13%"><span style="font-weight: normal">Autre</span></td>
+    <td width="87%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">permet
+      d'accéder à toutes les expressions dont le premier caractères ne serait
+      pas dans la liste des caractère du sélecteur.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">il
+      sera affiché sous cette forme, en fin de liste des caractères du
+      sélecteur:<span style="FONT-WEIGHT: normal"> [ A B C ... X Y Z # ]</span></span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Par
+      exemple si dans le sélecteur on a les lettre de l'alphabet de A à Z et
+      que l'on a des expression qui commence par des chifres de 0 à 9, elles
+      seront accessibles dans le sélecteur par le caractère défini par ce
+      paramètre (&quot;#&quot; par défaut).</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Montrer toutes les lettres de l'alphabet</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Oui:
+      Montre toutes les lettres<br>
+      Non: Ne montre que les lettres utilisées</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Certaines
+      langue ne possède pas toutes les lettre de 'alphabet latin, il n'est donc
+      pas utile d'afficher toutes les lettres. Si on est pas sur, on peut
+      activer cette option et dans ce cas elle prendra le pas sur la liste des
+      caractères du sélecteur, et n'affichera dans le sélecteur que les
+      premières trouvées dans le lexique. Cette option est dynamique. une
+      nouvelle entées commençant avec une nouvelle lettre, cette dernière
+      sera automatiquement ajoutée.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">par
+      exemple supposons que vous voulez faire un dictionnaire japonais français
+      (c'est mon cas, car je fais des arts martiaux et que j'ai ajouté un petit
+      lexique sur le site de mon club).</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">En
+      japonais il y a certaines lettres que l'on ne trouvera pas comme le
+      &quot;P&quot;, le &quot;Q&quot; le &quot;R&quot;, donc inutile de les
+      mettre dans le sélecteur. Cette options sera position sur &quot;non&quot;
+      pour afficher que les lettres utiles.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Du
+      coup le caractère &quot;autre&quot; n'apparaîtra pas.</span>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Il
+      es possible dans ce cas de laisser la liste de lettres vide.</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Délimiteur</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">Chaîne
+      d'encadrement du sélecteur<br>
+      ex: [ A B C ... X Y Z ]</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Séparateur</td>
+    <td width="85%">
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Permet
+      d'ajouter un espace ou un tiret entre chaque caractère du sélecteur,
+      pour l'aérer un peu. Pour mettre un espace taper un &quot;#&quot;.</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="font-weight: normal">Par
+      exemple #-# afficher la sélecteur ainsi: &quot; A - B - C - D
+      &quot;&nbsp; etc. au lieu de &quot;ABC&quot;</span></p>
+      <p style="margin-top: 4; margin-bottom: 0"><span style="FONT-WEIGHT: normal">autre
+      exemple:&nbsp; #|# donnera: [ A | B | C | D ]</span></td>
+  </tr>
+  <tr>
+    <td width="15%">Nombre de lignes</td>
+    <td width="85%"><span style="font-weight: normal">Le sélecteur peut être
+      affiché sur plusieurs lignes. Normalement une ligne est suffisantes, mais
+      j'ai voulu traiter le cas ou le selecteur contient l'alphabet plus les
+      chiffres plus d'autres caractères. Le tout sur une seule ligne ne serait
+      pas pratique. aussi est-il possible de définir jusque 3 lignes pour
+      afficher le sélecteur.</span>
+      <p><span style="font-weight: normal">Denière modif ajoutée: un
+      caractère &quot;_&quot; underscore forcera un saut de ligne dans le
+      sélecteur<br>
+      exemple : &quot;ABCDEFGHIJKLMNOPQRSTUVWX_0123456789&quot; sera affiché
+      comm ceci:</span></p>
+      <p align="center"><span style="font-weight: normal">[ A B C D E F G H I J
+      K L M N O P Q R S T U V W X ]<br>
+      [ 0 1 2 3 4 5 6 7 8 9 ]</span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="13%">&nbsp;</td>
+    <td width="87%">&nbsp;</td>
+  </tr>
+</table>
+<h1>&nbsp;</h1>
+<hr>
+<h1>Permissions et affichage</h1>
+Le system de permission de ce module permet un paramétrage très fin, et propre à chaque lexique.<br>
+      Pour y accéder sélectionnez &quot;Gestion des lexiques&quot; dans
+      l'administration du module, puis cliquez sur le cadenas du lexique pour le
+      quel vous voulez définir les permissions.<br>
+      Les permissions sont réparties en trois groupes:
+      <ul>
+        <li>Gestion des actions autorisés</li>
+        <li>Affichage des termes dans les listes et les&nbsp; fiches</li>
+        <li>Affichage des propriétés dans les listes et les fiches</li>
+      </ul>
+<p>A noter que l'affichage peut être différent dans les listes et dans
+      les fiches. Par exemple il est possible dans les listes de n'afficher que
+      les champs déterminants&nbsp; comme le nom, et la définition courte, et
+      dans la fiche avoir les informations au complet..</p>
+      <p>On accède à la fiche de deux manières, en cliquant sur le lien du
+      terme lui même, ou sur l'icône libellé &quot;fiche&quot; représentant
+      une feuille avec une loupe.</p>
+      <p>Chaque permission peut être définie pour chaque groupe. Si un
+      utilisateur appartient à plusieurs groupes, les permissions se cumules,
+      c'est à dire que si un utilisateur appartient au groupe &quot;A&quot; et
+      groupe &quot;B&quot;, et que le groupe &quot;A&quot; a les permission de
+      suppression, et&nbsp; &quot;B&quot; a la permission d'ajouter et de
+      modifier, l'utilisateur peut ajouter, modifier et supprimer.
+<p>&nbsp;</p>
+<table border="1" width="100%">
+  <tr>
+    <td width="13%" align="center"><b>Groupe</b></td>
+    <td width="87%" align="center"><b>Descriptions</b></td>
+  </tr>
+  <tr>
+    <td width="13%">Gestion des actions</td>
+    <td width="87%">Ce groupe de permissions défini les actions suivantes:
+      <ul>
+        <li>Ajout</li>
+        <li>Modification</li>
+        <li>Suppression</li>
+        <li>Chercher</li>
+        <li>proposer une définition</li>
+        <li>Demander une définition</li>
+        <li>ect ...</li>
+      </ul>
+      <p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Terme: affichage dans les listes et les fiches</td>
+    <td width="85%">Ce groupe permet de masquer certaines zones à
+      l'utilisateur. Si vous réservez une des trois zone de définition pour y
+      mettre des information confidentielles par exemple, vous pouvez masquer
+      cette zones à tous les utilisateur, sauf au web-master et aux groupes
+      autorisés.<br>
+      Il est même possible d'avoir des lexique complètement masqué.<br>
+      <p>Zones masquables:</p>
+      <ul>
+        <li>Lexique: Masque complètement le lexique à l'utilisateur non
+          autorisé à le voir</li>
+        <li>Catégories</li>
+        <li>Première zone de définition (Note: cette zone peut porter un autre
+          selon le jeu de titre que vous avez défini)</li>
+        <li>Seconde zone de définition (Note: cette zone peut porter un autre
+          selon le jeu de titre que vous avez défini)</li>
+        <li>Troisième zone de définition (Note: cette zone peut porter un
+          autre selon le jeu de titre que vous avez défini)</li>
+        <li>la rubrique &quot;voir aussi&quot;</li>
+      </ul>
+      <p>Ces options ne sont pas à confondre avec la définition de structure
+      du lexique qui permet de définir les de zones de définition exploitées
+      pour un lexique.<br>
+      Si par exemple la deuxième zone de finition n'est pas retenue dans la
+      gestion du lexique, quelle soit les permission elle ne sera pas visible
+      car pas utilisée par le lexique.</p>
+      <p>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="15%">Affichage des propriétés dans les listes et les fiches</td>
+    <td width="85%">Si vous avez associé un jeu de propriétés à un lexique,
+      chacune d'elle peut être paramétrée de façon à être visible ou non
+      selon le groupe.<br>
+      Cela permet de masquer des informations à l'ensemble des groupes, et de
+      les afficher à d'autres.<br>
+      Il est possible de n'afficher qu'une partie des propriété dans les liste
+      pour alléger l'affichage, et d'en présenter l'ensemble dans les fiches.
+      <p>Par exemple, j'utilise cette option pour une&nbsp; liste de clubs, à
+      laquelle j'ai associé le jeu de propriétés &quot;coordonnées&quot; qui
+      contient notamment les numéros de téléphones et les adresses des
+      correspondants. Elles sont masquées pour les visiteurs, et visibles pour
+      les membres du bureau..<br>
+      La liste dépend du jeu de propriété associé au lexique.</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<table border="1" width="100%">
+  <tr>
+    <td width="100%">Les cases à cocher de la dernière colonne permettent de
+      cocher ou de décocher toute la ligne.<br>
+      Les cases à cocher de la dernière ligne permettent de cocher ou
+      décocher toute une colonne, soit un groupe complet.<br>
+      La case à cocher en bas à droite permet de cocher ou décocher tout le
+      groupe de permissions.</td>
+  </tr>
+  <tr>
+    <td width="100%">Paramétrage par défaut, si les permissions ne sont pas
+      définies pour un lexique:
+      <ul>
+        <li><b>Gestion des termes</b>: Chercher, demander une définition, proposer une
+          définition, commentaire, envoyer un mail</li>
+        <li><b>Affichage général</b>: le lexique est visible et toutes les zones sont
+          affichées;</li>
+        <li><b>Affichage des propriétés</b>: toutes les propriétés sont affichées.</li>
+      </ul>
+      <p>&nbsp;</td>
+  </tr>
+</table>

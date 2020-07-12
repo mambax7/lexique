@@ -1,0 +1,32 @@
+Installation:
+
+
+Contenu des fichiers d'installation (dossier "root"):
+-module/lexiue/ : module de gestion de lexiques.
+
+Installation:
+------------------
+Important
+Avant toute chose, il faut installer le module "jjd_tools" téléchargeable à l'adresse:
+http://xoopx.kiolo.com
+Ce module contient des biliotheques et des images utilisées par ce module.
+En cas de mise à jour du module assurez vous que le derniere version de "jjs_tool" est bien installé.
+Le numero de version est visible dans les modules utilisant ces bibiothèques dans le premier onglet de l'administration du module.
+
+Copier l'ensemble du contenu du dossier "root"(pas le dossier lui-meme) à la racine de votre site.
+Ensuite procéder à l'installation classique du module, dans l'administration des module.
+
+
+Pour finir paramètrer le module selon vos besoin.
+Lisez attentivement la documentation accessible via le module.
+La doc est fournie séparément. Dans le module elle pointe sur le site http://xoops.com.
+Elle est accessible via le l'administration et est donc mise à jour dynamiquement.
+Si vous souhaitez l'avoir en local:
+- décompressez le fichier "doc.zip" à la racine du module "lexique".
+- Dans les options du modules mettez l'option "URL de la documentation" à vide
+
+Pour toute question ou information, rendez vous sur le site: http://xoops.kiolo.com dans le forum dédié au module installé.
+
+
+
+

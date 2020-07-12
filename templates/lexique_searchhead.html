@@ -1,0 +1,29 @@
+ <table width="1147" cellspacing="10">
+  <FORM ACTION="search.php" METHOD=POST>
+   <tr>
+<INPUT TYPE='hidden' NAME='idLexique' VALUE='<{$idLexique}>'>
+   </tr>  
+
+    <tr>
+      <td style="text-align: right" width="370"><b><{$smarty.const._MD_LEX_LOOKBY}></b></td>
+      <td style="text-align: center"><b>:</b></td>
+      <td style="text-align: left"><b><INPUT TYPE="text" CLASS="textbox" NAME="terme" VALUE="<{$search}>" SIZE=20></td>
+      <td style="text-align: center" width="10"><b><{$smarty.const._MD_LEX_SEARCH_WHERE}></b></td>
+      <td style="text-align: left" width="99"><b><{$list_searchby}></b</td>
+   </tr>
+   <tr>
+      <td style="text-align: right" width="370"><b><{$smarty.const._MD_LEX_LOOKFOR}></b></td>
+      <td style="text-align: center"><b>:</b></td>
+      <td style="text-align: left"><b><{$selected}></b></td>
+      <td style="text-align: center" width="45"><b><{$smarty.const._MD_LEX_SEARCH_IN}></b></td>
+      <td style="text-align: left" width="513"><b><{$list_category}></b></td>
+   </tr>
+   <tr>
+      <td style="text-align: right" width="370"></td>
+      <td style="text-align: center"></td>
+      <td style="text-align: left"><INPUT TYPE="button" VALUE="<{$smarty.const._MD_LEX_ADD_DEF}>" onclick="gotoURL2('<{$frm_submit}>');"></td>
+      <td style="text-align: left" width="45"></td>
+      <td style="text-align: left" width="513"><b><INPUT TYPE="submit" VALUE="<{$smarty.const._MD_LEX_SEARCH}>"></b></td>
+   </tr>
+   </form>
+ </table>

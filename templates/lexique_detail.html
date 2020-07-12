@@ -1,0 +1,65 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+<!-- 
+ 
+<{if $mode == 2}>
+<center><img src=\""._LEX_URL."logovd.gif\" border=0 alt=\"\"></center><P><br />
+<{/if}>
+-->
+
+<{if $intlinkspopup == 0 & $mode<>2}>    
+    <table width="100%" cellspacing="1" class="outer">
+      <tr>
+        <th>
+          <{$libelle.lexique}>: <{$lexiqueList}>
+          <{if $showMenuList == 1}><{$doActionMenu}><{/if}> 
+          <{if $showMenuBtn  == 1}><{$doActionBtn}><{/if}>   
+        </th>
+    
+      </tr>
+    </table>
+    <div align="center"><{$letterbar}></div><br>
+<{elseif $mode == 2}>
+  <{include file="db:lexique_print.html"}>
+<{/if}>
+
+<{if $intlinkspopup == 1}>
+    <style type="text/css">
+    #header       {display: none; }
+    #mainmenu     {display: none; } 
+    #leftcolumn   {display: none; } 
+    #rightcolumn  {display: none; } 
+    #headerlogo   {display: none; }    
+    #headerbanner {display: none; }    
+    #headerbar    {display: none; }    
+    </style>
+<{/if}>
+
+
+<{foreach item=post from=$dic_post}>
+  <{include file="db:lexique_post.html"}>
+  <{if $detailShowInterligne}><br><{/if}>
+<{/foreach}>
+<br>
+
+<div style="text-align: center; padding: 3px;margin:3px;">
+  <{$commentsnav}>
+</div>
+
+<div style="margin:3px; padding: 3px;">
+<!-- start comments loop -->
+<{if $comment_mode == "flat"}>
+  <{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+  <{include file="db:system_comments_thread.html"}>
+  <{elseif $comment_mode == "nest"}>
+  <{include file="db:system_comments_nest.html"}>
+<{/if}>
+<!-- end comments loop -->
+</div>
+<!--<div align="center"><{$dic_page_nav}></div><br>-->
+<{if $intlinkspopup == 0}>
+    <div align="center"><{$letterbar}></div><br>
+<{/if}>
+
+<{include file="db:lexique_footer.html"}>

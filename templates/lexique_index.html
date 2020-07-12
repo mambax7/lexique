@@ -1,0 +1,37 @@
+<script type="text/javascript" src="<{$pathToolsJS}>"></script>
+<script type="text/javascript" src="<{$pathLexToolsJS}>"></script>
+<table width="100%" cellspacing="1" class="outer">
+  <tr>
+    <th style="text-align:center;"><h1><{$name}> - <{$version}></h1></th>
+  </tr>
+  
+  <tr>
+    <td  class="even" style="text-align:center;"><{$description}></td>  
+  </tr>  
+  
+  <tr>
+    <td  class="even" style="text-align:center;"><{$credits}></td>  
+  </tr>  
+  
+  <tr>
+    <td  class="even" style="text-align:center;"><{$author}></td>  
+  </tr>  
+  
+  <tr>
+    <td  class="even" style="text-align:center;"><{$textintro}></td>  
+  </tr>  
+
+</table>
+<br>
+
+
+<{foreach item=post from=$lex_post}>
+  <{include file="db:lexique_list.html"}>
+  <{if $detailShowInterligne}><br><{/if}>
+<{/foreach}>
+
+
+<!-- ******************************************************************** -->
+
+<{include file='db:system_notification_select.html'}>
+<{include file="db:lexique_footer.html"}>
